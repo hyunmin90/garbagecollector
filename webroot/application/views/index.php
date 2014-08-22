@@ -18,7 +18,7 @@
           <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
-    <body>  
+    <body>
   <script type="text/x-handlebars">
   <div id="main">
 
@@ -58,8 +58,6 @@
 
 
   <script type="text/x-handlebars" id="php">
-      
-
       <div id="specselection">
   		<h3> PHP server setup</h3>
 
