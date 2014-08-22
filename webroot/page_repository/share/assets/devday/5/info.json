@@ -1,0 +1,55 @@
+{"name":"devday-5회",
+"id":5,
+"title":"제5회 Daum DevDay",
+"msg1":"환상의 섬 제주에 여러분을 초대합니다!",
+"msg2":"오픈API를 이용해 직접 어플리케이션 개발을 진행해 보는 행사로 다양한 이벤트와 푸짐한 경품",
+"msg3":"Daum 오픈API를 이용해 팀 단위로 라이브 코딩",
+"desc":"환상의 섬 제주에 여러분을 초대합니다! Daum DevDay는 Daum 오픈API를 이용해 직접 어플리케이션 개발을 진행해 보는 행사로 다양한 이벤트와 푸짐한 경품이 함께 합니다. 특히 이번 5회 행사는 서울을 떠나 환상의 섬 제주에서 여러분과 함께합니다. Daum DevDay는 직접 제안한 프로젝트를 Daum 오픈API를 이용해 팀 단위로 라이브 코딩을 하는 자리입니다. 본인이 원하는 어떠한 언어라도 사용할 수 있으며 무엇보다도 창의적인 아이디어와 개발하고자 하는 열정이 중요합니다.",
+"image1":"lunch2.jpg",
+"place":"제주 GMC",
+"date":"2008-08-29 (1박 2일)",
+"itemindex":"",
+"useProject":true,
+"useGallery":true,
+"items":{
+
+	"galleries":[
+		{"type": "image", "tn":"./assets/devday/5/tn1.png", "url":"./assets/devday/5/golf.jpg","title":"골프치는참가자"},
+		{"type": "image", "tn":"./assets/devday/5/tn2.png", "url":"./assets/devday/5/intro1.jpg","title":"설명듣는 참가자"},
+		{"type": "image", "tn":"./assets/devday/5/tn3.png", "url":"./assets/devday/5/intro2.jpg","title":"설명듣는 참가자"},
+		{"type": "image", "tn":"./assets/devday/5/tn4.png", "url":"./assets/devday/5/lunch1.jpg","title":"맛있는 점심시간"},
+		{"type": "image", "tn":"./assets/devday/5/tn5.png", "url":"./assets/devday/5/lunch2.jpg","title":"맛있는 점심시간"},
+		{"type": "image", "tn":"./assets/devday/5/tn6.png", "url":"./assets/devday/5/project1.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/5/tn7.png", "url":"./assets/devday/5/project2.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/5/tn8.png", "url":"./assets/devday/5/project3.jpg","title":"프로젝트"}
+    ],
+    "projects":[
+		{"team":"지아,성대현,박수철,최종열","name":"외울래? 가드 올릴래!","msg1":"일본어 단어를 다음 오픈API를 이용, 검색하여 단어장을 만들고, pdf를 생성하여 암기할 수 있게 하고, 해당 단어장에 대한 퀴즈를 보고, 점수를 기록하고, 미투에 점수를 포스팅 할 수 있게 한다.","prize":"","url":"","icon":""},
+		{"team":"한동균,양준호,이승찬,좌혜연","name":"설화와 함께하는 제주여행","msg1":"제주의 관광지와 관련된 키워드를 미리 입력된 DB에서 그 관광지와 관련된 설화의 키워드를 검색한 후 관광지와 관련된 키워드(ex. 정방폭포)를 설화와 관련된 키워드와 결합한 후 다음 블로그 검색을 통하여 설화와 관련된 컨텐츠를 최상위에 표현할 수 있도록 한다.","prize":"2등","url":"http://sslab.cheju.ac.kr/~handk/devday","icon":"project2.png"},
+		{"team":"남궁현,송민아,양성권","name":"TagCloud Inside","msg1":"특정 블로그 혹은 블로그들에 존재하는 페이지별 사용자태그들을 태그구름(Tag Cloud)형태로 추출한다. 추출된 태그들은 작성자, 페이지와의 연결되어 표현되어, 다양한 뷰(Tag뷰, 사용자뷰)를 통한 블로그 페이지로의 접근방법을 제공할 수 있다.","prize":"","url":"","icon":""},
+		{"team":"이아랑,이창호,민홍빈,이정대","name":"Open Puzzle","msg1":"다음, 플리커, 네이버의 Open API를 이용하여 낱말 퍼즐을 제공한다.","prize":"","url":"","icon":""},
+		{"team":"이길복,박건태,최형준,한윤진","name":"돼지와 함께 블로깅","msg1":"Hugeflow에서 개발중인 Pigmap 에 Tistory Open Api를 이용하여 자신의 글을 지도위에 등록합니다. 뿐만 아니라 글이 등록되 위치의 지도를 블로그에 등록할 수 있도록 합니다. 추가로 이미지 검색을 통해 문자열에 맞혀서 이미지를 뿌려줍니다.","prize":"3등","url":"","icon":"project5(2).jpg"},
+		{"team":"강형규,이혜경,고기봉","name":"Chart Chart","msg1":"기본적으로 도서검색 API와 플렉스를 이용하여 좀 더 쉽고 편리한 도서 검색을 구연하였습니다. 기존의 도서 검색을 해보셨다면 결과내 검색이 어떻게 동작하는지 아실겁니다. 보통 텍스트를 이용하여 검색을 하게 되는데, 텍스트는 시각적인 면보다 문형적인 성격이 더 강합니다. 그리하여 저희는 좀 더 시각적으로 편리한 방법이 없을까 생각하다 차트를 이용하게 되었습니다.","prize":"","url":"","icon":""},
+		{"team":"이동균,오제윤","name":"Brain Humor ","msg1":"Flickr API를 이용하여 사용자 태그셋을 가져와 태그카운팅 순서대로 정렬하여 사용자의 뇌구조를 표현한다.","prize":"","url":"","icon":""},
+		{"team":"이현주,강효아","name":"마음의 소리","msg1":"오픈API를 이용하여 입체적인 마인드맵을 작성한다. 기존 마인드맵과는 차별화된 웹기반 프로그램으로 별도로 설치가 필요하지 않고 os에 종속적이지도 않다. 또한 언어로만 작성된 마인드맵과 달리 노드의 추천언어를 검색한 동영상, 그림파일등이 떠서 다양한 활용이 가능하다.","prize":"","url":"","icon":""},
+		{"team":"이태호,박지원,강민지,김정은","name":"Solar System Probe (임시버전)","msg1":"","prize":"","url":"","icon":""},
+		{"team":"임지현,손숙희,이상아,한지영","name":"핸드폰 바탕화면 검색(미완)","msg1":"핸드폰에서 다음 OpenAPI 이미지검색으로 얻은 이미지를 바탕화면 전체에 sliding 하여 보여준다.","prize":"","url":"","icon":""},
+		{"team":"변지웅,차지윤,박요종,고기봉","name":"Open AIP를 이용한 교통 정보제공 Mash Up 서비스(베타)","msg1":"센서를 이용하여 교통량 데이터 수집하고, 실시간 데이터 처리가 가능한 USN 미들웨어에서 제공하는 Open API와 구글에서 제공하는 지도, 날씨 등의 API를 이용하여 맵상에 교통량 정보를 제공한다. 해당 정보를 바탕으로 적절한 키워드를 생성하고, 자동으로 다음 뉴스 검색 API를 이용 그 키워드에 해당하는 검색 결과를 보여주며 그 정보는 지식베이스에 저장이 가능하다.","prize":"1등","url":"","icon":""},
+		{"team":"이동규,태인용,김혜민","name":"EZ TISTORY POSTING","msg1":"다음 검색 API와 티스토리 UCC API 그리고 Curl이란 언어를 이용하여 티스토리에 쉽게 포스팅을 할 수 있게 한다.","prize":"","url":"","icon":""}
+    ],
+    "social":[
+		{"type":"picture","title":"루미넌스님의 2008 Daum DevDay Jeju(플리커 사진)","url":"http://www.flickr.com/photos/lumiphoto/sets/72157607019924535/","name":"루미넌스","date":"2008-08-29"},
+		{"type":"picture","title":"정주Go님의 Flickr","url":"http://www.flickr.com/photos/jeongzugo/sets/72157607040510663/","name":"정주Go","date":"2008-08-29"},
+		{"type":"picture","title":"Channy님 Flickr","url":"http://www.flickr.com/photos/seokchanyun/sets/72157607076846067/","name":"Channy Yun","date":"2008-08-29"},
+		{"type":"picture","title":"Daum DNA flickr","url":"http://www.flickr.com/photos/daumdna/sets/72157607011283235/","name":"Daum DNA Lab.","date":"2008-08-28"},
+		{"type":"blog","title":"2008 Daum Dev Day가 지금 제주GMC에서 진행중.","url":"http://luminance.kr/836","name":"루미넌스","date":"2008-08-29"},
+		{"type":"blog","title":"2008 Daum Dev Day가 아직도 제주GMC에서 진행중.","url":"http://luminance.kr/837","name":"루미넌스","date":"2008-08-29"},
+		{"type":"blog","title":"제 5회 다음 DevDay 참가 후기 - 1","url":"http://grow.egloos.com/4588162","name":"지아","date":"2008-09-01"},
+		{"type":"blog","title":"제 5회 다음 DevDay 참가 후기 - 2","url":"http://grow.egloos.com/4589460","name":"지아","date":"2008-09-02"},
+		{"type":"blog","title":"[Daum-DevDay5] 출발 (김포공항)","url":"http://gilverlight.net/2929","name":"길버트","date":"2008-09-02"},
+		{"type":"blog","title":"다음 DevDay in 제주도 잘 다녀왔습니다.","url":"http://gilverlight.net/2931","name":"길버트","date":"2008-09-03"},
+		{"type":"blog","title":"[Daum-DevDay5] Daum GMC 투어","url":"http://gilverlight.net/2933","name":"길버트","date":"2008-09-04"},
+		{"type":"blog","title":"[Daum-DevDay5] 제주도착, 다음 GMC로!","url":"http://gilverlight.net/2932","name":"길버트","date":"2008-09-04"},
+		{"type":"blog","title":"제5회 Daum DevDay 후기","url":"http://www.jong10.com/307","name":"jung10","date":"2008-09-05"}
+    ]
+}}

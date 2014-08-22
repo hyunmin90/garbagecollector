@@ -1,0 +1,22 @@
+{
+    "header_type": "img",
+    "header_img_path": "/assets_dev/header.png",
+    "header_tag": "",
+    "footer_type": "img",
+    "footer_img_path": "/assets_dev/footer.png",
+    "footer_tag": "",
+    "comments": [
+        {
+            "comment": "테스트1 입니다."
+        },
+        {
+            "comment": "테스트2 입니다."
+        },
+        {
+            "comment": "테스트3 입니다."
+        },
+        {
+            "comment": "테스트4 입니다."
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{"name":"devon-list","items":
+	[
+	{
+		"id":3,
+	    "title":"제3회 Daum Devon",
+	    "msg1":"DevOn Tech&Shake",
+	    "msg2":"디브온은 참여하고 소통하는 개발자 행사입니다.",
+	    "msg3":"일반적인 강의 위주 콘퍼런스 형식을 완전히 탈피하여 만남, 나눔, 공감, 즐거움을 느낄 수 있는 IT인들의 축제입니다.",
+	    "msg4":"DevOn 2013 행사 사이트 바로 가기",
+	    "msg4_href":"http://devon.daum.net/2013/",
+	    "desc":"",
+		"image1":"main.jpg",
+		"place":"삼성동 코엑스 D Hall",
+		"date":"2013-10-26~2013-10-27",
+		"itemindex":"",
+		"useProject":true,
+		"useGallery":true
+	},
+	{
+		"id":2,
+	    "title":"제2회 Daum Devon",
+	    "msg1":"DevOn 개발자, 커뮤니티 그리고 소통",
+	    "msg2":"IT 오피니언 리더들의 대담 세션, 키노트",
+	    "msg3":"Daum 개발자 및 외부 참여 강연자의 6개 트랙 24개 기술 세션, 16개 참여 커뮤니티 ",
+	    "msg4":"DevOn 2012 행사 사이트 바로 가기",
+	    "msg4_href":"http://devon.daum.net/2012/",
+	    "desc":"오픈 API를 이용한 창의적인 아이디어 구현 및 개발자간 교류 확대를 위하여 아래와 같이 열두번째 디브데이를 개최합니다. 이틀간 아이디어 구현에 푹 빠지실 개발자 여러분의 많은 참여를 바랍니다.",
+		"image1":"main.jpg",
+		"place":"신도림동 디큐브시티 7F",
+		"date":"2012-10-12",
+		"itemindex":"",
+		"useProject":true,
+		"useGallery":true
+	},
+	{
+		"id":1,
+	    "title":"제1회 Daum Devon",
+	    "msg1":"DevOn 개발자, 커뮤니티 그리고 소통",
+	    "msg2":"‘공유와 소통’ 주제, 3개 세션에서 26개 발표, 개발자 커뮤니티와 공동으로 '열린' 진행",
+	    "msg3":"이재웅 다음 창업자, 김택진 NC소프트 대표 등 개발자와 대담도 ",
+	    "msg4":"DevOn 2011 행사 사이트 바로 가기",
+	    "msg4_href":"http://devon.daum.net/2011/",
+	    "desc":"작년 6월 10회 DevDay를 마지막으로 열리지 않았던 DevDay를 다시 시작합니다! 이번 DevDay는 저희가 이번에 처음으로 주최하는 DevOn이라는 행사와 함께 아래와 같이 진행됩니다. 이번 행사에서는 Daum 오픈API의 새로 바뀌는 정책 소개, 업데이트된 지도API, 추후 공개하게 될 모바일 지도API에 대해서 다룰 예정입니다.",
+		"image1":"main1.jpg",
+		"place":"신림동 그랜드 호텔",
+		"date":"2011-11-25",
+		"itemindex":"",
+		"useProject":false,
+		"useGallery":true
+	}
+	]
+}

@@ -1,0 +1,18 @@
+{"name":"DevOn-1회",
+"id":1,
+"title":"Daum DevOn 2011",
+"itemindex":"",
+"useProject":true,
+"useGallery":true,
+"items":{
+	"galleries":[
+		{"type":"iframe","tn":"/include/share/devon/1/tn1.png","url":"/include/share/devon/1/g1.html","title":"회의중인 모습"},
+	    {"type":"iframe","tn":"/include/share/devon/1/tn2.png","url":"/include/share/devon/1/g2.html","title":"회의중인 모습"},
+	    {"type":"iframe","tn":"/include/share/devon/1/tn3.png","url":"/include/share/devon/1/g3.html","title":"회의중인 모습"},
+	    {"type":"iframe","tn":"/include/share/devon/1/tn4.png","url":"/include/share/devon/1/g4.html","title":"회의중인 모습"},
+	    {"type":"iframe","tn":"/include/share/devon/1/tn5.png","url":"/include/share/devon/1/g5.html","title":"회의중인 모습"},
+		{"type":"image","tn":"/include/share/devon/1/tn6.png","url":"http://cfile2.uf.tistory.com/image/154F19364ECFB52E271C7F","title":"회의중인 모습"},
+		{"type":"image","tn":"/include/share/devon/1/tn7.png","url":"http://cfile2.uf.tistory.com/image/166C9C364ECFB523105F7F","title":"초대 - 행사순서에 관한 예시"},
+		{"type":"image","tn":"/include/share/devon/1/tn8.png","url":"http://cfile4.uf.tistory.com/image/115AE4364ECFB5241D8E89","title":"추첨하는 사진"}
+   	]
+}}

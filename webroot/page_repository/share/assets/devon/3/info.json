@@ -1,0 +1,18 @@
+{"name":"DevOn-3회",
+"id":3,
+"title":"Daum DevOn 2013",
+"itemindex":"",
+"useProject":true,
+"useGallery":true,
+"items":{
+	"galleries":[
+		{"type":"image","tn":"http://farm4.staticflickr.com/3665/10583215264_eff743b393_t.jpg","url":"http://farm4.staticflickr.com/3665/10583215264_072f1ee67b_o.jpg","title":"기념 촬영 - YAPP"},
+		{"type":"image","tn":"http://farm8.staticflickr.com/7436/10583076995_e391ae2788_t.jpg","url":"http://farm8.staticflickr.com/7436/10583076995_3ba53f9964_o.jpg","title":"다음서비스 웹접근성 컨설팅"},
+		{"type":"image","tn":"http://farm6.staticflickr.com/5519/10583168166_aa4f5001c6_t.jpg","url":"http://farm6.staticflickr.com/5519/10583168166_e7d1b3bd74_o.jpg","title":"Daum With"},
+		{"type":"image","tn":"http://farm6.staticflickr.com/5491/10583109486_9024cfd71b_t.jpg","url":"http://farm6.staticflickr.com/5491/10583109486_cdd0e360aa_o.jpg","title":"LEED"},
+		{"type":"image","tn":"http://farm4.staticflickr.com/3704/10583106105_4493472294_t.jpg","url":"http://farm4.staticflickr.com/3704/10583106105_2214645670_o.jpg","title":"기술 미트업 - 다음 세션"},
+		{"type":"image","tn":"http://farm8.staticflickr.com/7328/10583169274_eeec82ff00_t.jpg","url":"http://farm8.staticflickr.com/7328/10583169274_57645c5cf9_o.jpg","title":"안철수 의원과의 대담"},
+		{"type":"image","tn":"http://farm8.staticflickr.com/7434/10570649894_0a721ff08b_t.jpg","url":"http://farm8.staticflickr.com/7434/10570649894_2678bf54b9_o.jpg","title":"라이프엔시멘틱스"},
+		{"type":"image","tn":"http://farm6.staticflickr.com/5495/10583149235_f5f0eefdeb_t.jpg","url":"http://farm6.staticflickr.com/5495/10583149235_028eac4d85_o.jpg","title":"행사장 전경"}
+   	]
+}}

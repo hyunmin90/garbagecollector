@@ -1,0 +1,163 @@
+<html>
+<head>
+	<html lang="ko">
+	<title>Daum DNA 개발자 네트워크 : Daum DNA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel="stylesheet" type="text/css" href="./assets/dna_common.css">	
+	<link rel="stylesheet" type="text/css" href="./assets/dna_share.css">	
+	<script src="http://s1.daumcdn.net/svc/original/U0301/cssjs/jquery/jquery-1.7.2.min.js"></script>
+	<script src="./assets/devday/devday.js"></script>
+</head>
+<body>
+<div class="wrap_list">
+	<ul class="list_evt">
+		<li class="on" >
+			<div class="wrap_fold">
+				<div class="wrap_tab tab_type1">
+					<ul id="d_tabmenu" class="tab_comm tab_evt">
+						<li class="on intro">
+							<a href="#" onclick="javascript:selectIntro();return false;" class="link menu1">소개</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cont_tab cont_on">
+					<div class="cont_intro" >
+						<strong class="screen_out">소개</strong>
+						<div class="thumb"><img src="" class="thumb_img" width="257" height="179" alt=""></div>
+						<div class="cont">
+							<strong class="tit"></strong>
+							<div class="txt"></div>
+						</div>
+					</div>
+					<div class="cont_project" style="display: none;">
+						<strong class="screen_out">프로젝트</strong>
+						<ul class="list"></ul>
+					</div>
+					<div class="cont_gallery" style="display: none;">
+						<strong class="screen_out">갤러리</strong>
+						<div class="viewer">
+						</div>
+						<div class="box_gallery">
+							<strong class="screen_out">목록</strong>
+							<div class="box_slide">
+								<ul class="list_video" style="left:-0px;width:3000px;">
+								</ul>
+							</div>
+							
+							<a href="#" class="btn_share btn_prev" onclick="javascript:galleryPrev();return false;">이전</a>
+							<a href="#" class="btn_share btn_next" onclick="javascript:galleryNext();return false;">다음</a>
+							
+						</div>
+					</div>
+					<div class="cont_respond" style="display: none;">
+						<strong class="screen_out">반응모음</strong>
+							<!--
+							<div class="respond fst">
+								<strong class="tit_share tit_photo">사진모음</strong>
+								<ul class="list">
+									<li>
+										<a href="#" class="link">플리커 사진</a>
+									</li>
+									<li>
+										<a href="#" class="link">다음 클라우드</a>
+									</li>
+								</ul>
+							</div>
+							 -->
+							<div class="respond">
+								<strong >관련 글 모음</strong>
+								<!-- <strong class="tit_share tit_relation">관련 글 모음</strong> -->
+								<ul class="list" id="d_bloglist">
+								</ul>
+							</div>
+							<!-- 
+							<div class="respond">
+								<strong class="tit_share tit_short">관련 짧은 글 모음</strong>
+								<ul class="list list_short">
+									<li>
+										<span class="ico_share ico_twitter">트위터</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">후크선장</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_facebook">페이스북</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_yozm">요즘</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_me2day">미투데이</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+								</ul>
+							</div>
+							 -->
+						</div>
+				</div>
+			</div>
+			<a target="_parent" class="btn_fold btn_open" href="/pages/share/devday">목록으로</a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+var data = {"name":"devday-12회",
+"id":12,
+"title":"제12회 Daum DevDay",
+"msg1":"겪어 본 적 없는 예상 밖 개발자 행사!",
+"msg2":"Daum 오픈 API 개발자들의 멘토링 및 다양한 개발 도구 소개",
+"msg3":"숙식 제공 및 다양한 참여형 프로그램과 간식 제공",
+"desc":"오픈 API를 이용한 창의적인 아이디어 구현 및 개발자간 교류 확대를 위하여 아래와 같이 열두번째 디브데이를 개최합니다. 이틀간 아이디어 구현에 푹 빠지실 개발자 여러분의 많은 참여를 바랍니다.",
+"image1":"main.jpg",
+"place":"강원도 홍천 대명 비발디파크",
+"date":"2012-01-29 (1박 2일)",
+"itemindex":"",
+"useProject":true,
+"useGallery":true,
+"items":{
+	"galleries":[
+		{"type": "image", "tn":"./assets/devday/12/tn1.png", "url":"./assets/devday/12/tn1.jpg","title":"단체사진"},
+		{"type": "image", "tn":"./assets/devday/12/tn2.png", "url":"./assets/devday/12/tn2.jpg","title":"api 사용하기"},
+		{"type": "image", "tn":"./assets/devday/12/tn3.png", "url":"./assets/devday/12/tn3.jpg","title":"소개"},
+		{"type": "image", "tn":"./assets/devday/12/tn4.png", "url":"./assets/devday/12/tn4.jpg","title":"점심도시락"},
+		{"type": "image", "tn":"./assets/devday/12/tn5.png", "url":"./assets/devday/12/tn5.jpg","title":"아이패드 상"},
+		{"type": "image", "tn":"./assets/devday/12/tn6.png", "url":"./assets/devday/12/tn6.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/12/tn7.png", "url":"./assets/devday/12/tn7.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/12/tn8.png", "url":"./assets/devday/12/tn8.jpg","title":"프로젝트"}
+    ],
+    "projects":[
+    	{"team":"1조","name":"지역+소셜 기반 질문 시스템","msg1":"위치를 표시하고 질문을 하는 시스템~ 친구들끼리 질문을 공유하고 답변을함.","prize":"","url":"","icon":""},
+    	{"team":"2조","name":"지역 로컬 검색","msg1":"설명:사용자가 사고 싶은 물건이 있을 때, 사용자의 현재 위치를 기반으로 주변에 나오는 검색 결과들을 보여줌","prize":"","url":"","icon":""},
+    	{"team":"3조","name":"솔로들의 데이터 코스","msg1":"자기가 원하는 데이트 코스를 올려놓고 마음에 맞으면 찜해서 만나는 서비스","prize":"","url":"","icon":""},
+    	{"team":"4조","name":"Contents Suffer","msg1":"이미지및 동영상 검색 API를 이용하여 원하는 콘텐츠를 손쉽게볼수 있는 뷰어 서비스","prize":"","url":"http://10.100.100.69:3300/test4team","icon":""},
+    	{"team":"5조","name":"나도 기자다","msg1":"기존 컨텐츠(인터넷 신문 기사)와 이미지, 동영상 그리고 자신의 의견을 담은 글을 출판할수 있는 서비스","prize":"","url":"http://choco.wafflestudio.net:3010","icon":""},
+    	{"team":"6조","name":"소는 누가 키워!?","msg1":"한우 원산지 추적 시스템을 다음 맵을 이용해 직관적인 정보를 제공 해 주고있다. 또한 한우를 사육하는 농가들의 개인화 브랜드를 만들어 주기 위한 서비스","prize":"","url":"","icon":""},
+    	{"team":"7조","name":"Travel Planer","msg1":"여행 계획표,지도에서 여행 목적지를 선택하고 추가하여 일정을 편리하게 조절할 수 있고 추가한 지역의 주변 축제와 소셜커머스를 확인 할 수 있는 서비스. 트위터를 이용하여 주소를 공유.","prize":"","url":"http://ducanp.cafe24.com:8080/travelplan/","icon":""},
+    	{"team":"8조","name":"정치인 배틀","msg1":"19대 총선에 출마할 것 같은 정치인들에 대한 정보를 API로 부터 수집하여 제공하고, 이를 티스토리를 DB로 이용해서 시스템을 사용.","prize":"","url":"http://choco.wafflestudio.net:4667/","icon":""},
+    	{"team":"9조","name":"댓글 분리 시스템","msg1":"보통 SNS는 글 목록이 많아지면 예전 글을 찾기 힘들며 누가 누구와 나누던 대화인지도 찾아보기 힘이 듭니다.","prize":"","url":"","icon":""},
+    	{"team":"10조","name":"무제","msg1":"블로그에서 포스트를 작성 할 때, 특정 단어에 대해 다이나믹한 검색을 쉽게 할 수 있도록 제공.","prize":"","url":"","icon":""},
+    	{"team":"11조","name":"세트 갤러리","msg1":"이미지를 검색해서 볼 수 있는 갤러리와 맘에 드는 이미지들을 세트로 Send to Blog","prize":"","url":"","icon":""},
+    	{"team":"12조","name":"스타#","msg1":"다음 스타 실시간 스타랭킹을 이용해 연예인 관련 이미지, 동영상, 관련 검색어를 뿌려주고 다음 쇼핑몰에 관련 상품을 검색.","prize":"","url":"http://others.hanul.co/devday/","icon":""},
+    	{"team":"13조","name":"퀴즈 배틀","msg1":"시사 이슈를 즐겁게 익힐 수 있는 지도 기반 퀴즈 배틀 게임.","prize":"1등","url":"http://10.100.100.43/devday/map.html","icon":""},
+    	{"team":"Daum DNA 이정주","name":"직장 상사 말실수 조심하기 시뮬레이션","msg1":"입력 창에 마이크를 선택해서 말을 하거나 직접 키보드로 입력하시면 됩니다.","prize":"","url":"http://s1.jjgo.kr/dosisa","icon":""},
+    	{"team":"Daum DNA 홍은석","name":"내 핸드폰 번호는 유출 되었나?","msg1":"각종 검색 API를 이용해서 내 핸드폰 번호가 유출되었는지 검색해 보는 서비스","prize":"","url":"","icon":""}
+    ],
+    "social":[
+    	{"type":"blog","title":"다음 Devday를 다녀와서...","url":"http://daclouds.tumblr.com/post/16820967576/daum-devday","name":"daclouds","date":"2010-07-02"},
+    	{"type":"news","title":"다음 코딩대회, 매시업의 진수를 보여라","url":"http://www.zdnet.co.kr/news/news_view.asp?artice_id=20120129173254","name":"ZDNet Korea","date":"2012-01-29"},
+		{"type":"news","title":"다음 코딩대회, 불타는 하룻밤 결과는?","url":"http://zdnet.co.kr/news/news_view.asp?artice_id=20120130141412","name":"ZDNet Korea","date":"2012-01-30"},
+		{"type":"picture","title":"Daum DevDay 10th","url":"http://www.flickr.com/photos/daumdna/sets/72157624243394033/","name":"Flickr","date":"2012-01-30"}
+    ]
+}};
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<html>
+<head>
+	<html lang="ko">
+	<title>Daum DNA 개발자 네트워크 : Daum DNA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel="stylesheet" type="text/css" href="./assets/devday/dna_common.css">	
+	<link rel="stylesheet" type="text/css" href="./assets/devday/dna_share.css">	
+	<script src="http://s1.daumcdn.net/svc/original/U0301/cssjs/jquery/jquery-1.7.2.min.js"></script>
+	<script src="./assets/devday/devday.js"></script>
+</head>
+<body>
+<div class="wrap_list">
+	<ul class="list_evt">
+		<li class="on" >
+			<div class="wrap_fold">
+				<div class="wrap_tab tab_type1">
+					<ul id="d_tabmenu" class="tab_comm tab_evt">
+						<li class="on intro">
+							<a href="#" onclick="javascript:selectIntro();return false;" class="link menu1">소개</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cont_tab cont_on">
+					<div class="cont_intro" >
+						<strong class="screen_out">소개</strong>
+						<div class="thumb"><img src="" class="thumb_img" width="257" height="179" alt=""></div>
+						<div class="cont">
+							<strong class="tit"></strong>
+							<div class="txt"></div>
+						</div>
+					</div>
+					<div class="cont_project" style="display: none;">
+						<strong class="screen_out">프로젝트</strong>
+						<ul class="list"></ul>
+					</div>
+					<div class="cont_gallery" style="display: none;">
+						<strong class="screen_out">갤러리</strong>
+						<div class="viewer">
+						</div>
+						<div class="box_gallery">
+							<strong class="screen_out">목록</strong>
+							<div class="box_slide">
+								<ul class="list_video" style="left:-0px;width:3000px;">
+								</ul>
+							</div>
+							
+							<a href="#" class="btn_share btn_prev" onclick="javascript:galleryPrev();return false;">이전</a>
+							<a href="#" class="btn_share btn_next" onclick="javascript:galleryNext();return false;">다음</a>
+							
+						</div>
+					</div>
+					<div class="cont_respond" style="display: none;">
+						<strong class="screen_out">반응모음</strong>
+							<!--
+							<div class="respond fst">
+								<strong class="tit_share tit_photo">사진모음</strong>
+								<ul class="list">
+									<li>
+										<a href="#" class="link">플리커 사진</a>
+									</li>
+									<li>
+										<a href="#" class="link">다음 클라우드</a>
+									</li>
+								</ul>
+							</div>
+							 -->
+							<div class="respond">
+								<strong >관련 글 모음</strong>
+								<!-- <strong class="tit_share tit_relation">관련 글 모음</strong> -->
+								<ul class="list" id="d_bloglist">
+								</ul>
+							</div>
+							<!-- 
+							<div class="respond">
+								<strong class="tit_share tit_short">관련 짧은 글 모음</strong>
+								<ul class="list list_short">
+									<li>
+										<span class="ico_share ico_twitter">트위터</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">후크선장</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_facebook">페이스북</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_yozm">요즘</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_me2day">미투데이</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+								</ul>
+							</div>
+							 -->
+						</div>
+				</div>
+			</div>
+			<a target="_parent" class="btn_fold btn_open" href="/pages/share/devday">목록으로</a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+var data = {"name":"devday-09회",
+"id":9,
+"title":"제9회 Daum DevDay",
+"msg1":"Daum DevDay(부제 : 나만의 웹에디터 만들기)가 다음과 같이 열립니다!",
+"msg2":"Daum 오픈에디터를 주요 주제",
+"msg3":"",
+"desc":"Daum DevDay(부제 : 나만의 웹에디터 만들기)가 다음과 같이 열립니다! 이번 행사에서는 지난 9월에 오픈소스로 공개한 Daum 오픈에디터를 주요 주제로 다루게 됩니다.",
+"image1":"livecoding.jpg",
+"place":"서울 파트너하우스",
+"date":"2009-11-14 (1일)",
+"itemindex":"",
+"useProject":true,
+"useGallery":true,
+"items":{
+	"galleries":[
+		{"type": "image", "tn":"./assets/devday/9/tn1.png", "url":"./assets/devday/9/intro1.jpg","title":"설명회"},
+		{"type": "image", "tn":"./assets/devday/9/tn2.png", "url":"./assets/devday/9/intro2.jpg","title":"설명회"},
+		{"type": "image", "tn":"./assets/devday/9/tn3.png", "url":"./assets/devday/9/lunch1.jpg","title":"점심식사"},
+		{"type": "image", "tn":"./assets/devday/9/tn4.png", "url":"./assets/devday/9/lunch2.jpg","title":"점심식사"},
+		{"type": "image", "tn":"./assets/devday/9/tn5.png", "url":"./assets/devday/9/projectss1.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/9/tn6.png", "url":"./assets/devday/9/projectss2.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/9/tn7.png", "url":"./assets/devday/9/projectss3.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/9/tn8.png", "url":"./assets/devday/9/projectss4.jpg","title":"프로젝트"}
+    ],
+    "projects":[
+    	{"team":"woozin23","name":"daum Editor 돋보기 기능","msg1":"제가 구현한 돋보기 기능은 다음 에디터의 툴바에 버튼을 하나 삽입하여 클릭햇을시에 메뉴창을 띄우면서 현재 타이핑 하고있는 값을 확대시켜 보여주는 기능입니다. ","prize":"","url":"","icon":"projects1.png"},
+		{"team":"lispro06","name":"오픈 에디터에서 야후 지도 사용하기","msg1":"주소->좌표 변환 API의 DB화에 대한 내용입니다. 기존에 api에서 지원하는 기능인데, db화 했습니다.","prize":"","url":"","icon":"project1.jpg"},
+		{"team":"봄싹","name":"daum Editor plugin wordAssist","msg1":"키보드를 -입력하면 자동으로 사전이 펼쳐진다.","prize":"대상","url":"http://helols.tistory.com/321","icon":"project3.jpg"},
+		{"team":"iolo","name":"웹 기반 스펠체커 API + 다음 에디터","msg1":"오타가 잔뜩 있는 문장을 입력한 다음, 툴바의 오른쪽 끝에서 세번째 있는 필름롤 아이콘을 클릭하면 스펠 체커가 틀린 단어를 빨갛게 표시해 준다.","prize":"우수상","url":"http://blog.iolo.pe.kr/470","icon":"project.JPG"},
+		{"team":"호야지기","name":"다음에디터에 수식 넣기","msg1":"에디터 본문에 수식을 넣는 프로그램 입니다.","prize":"","url":"http://hlug.kr/~hoyajigi/daumeditor-5.2.0/daumeditor.html","icon":"project5.JPG"},
+		{"team":"이정균","name":"그림 간단히 그려서 첨부하기","msg1":"에디터에 그림넣는 영역을 두어 그려지는 그림을 본문에 삽입하는 기능입니다","prize":"","url":"","icon":"project6.JPG"},
+		{"team":"변정훈","name":"Flickr CCL 이미지 추가하기","msg1":"Flickr 를 통하여 이미지 검색후 삽입하는 기능입니다.","prize":"","url":"http://blog.outsider.ne.kr/myexample/2009/devday/index.html","icon":"project7.JPG"},
+		{"team":"김동민","name":"메신저 포스트하기","msg1":"에디터에 메신저 프로그램 대화내용을 첨부하는 기능입니다.","prize":"","url":"","icon":"project8.jpg"},
+		{"team":"나오 타카토시","name":"미디어 수동 로딩을 통하여 미디어컨텐츠가 많은 페이지 속도 증가 ","msg1":"게시물 작성시 미디어 컨텐츠가 많아질 경우 로딩 속도면에서 문제가 생기는데 이것을 수동적으로 버튼을두어 변환하는 기능입니다.","prize":"","url":"http://hlug.kr/~miyano86/ensobi/daumeditor/daumeditor.html","icon":"project9.JPG"}
+    ],
+    "social":[
+		{"type":"blog","title":"[머드초보의 일상] 제9회 Daum DevDay 참가 후기 - 다음오픈에디터(DaumEditor)","url":"http://mudchobo.tistory.com/450","name":"머드초보","date":"2009-11-15"},
+		{"type":"blog","title":"제9회 Daum DevDay","url":"http://blog.outsider.ne.kr/399","name":"Outsider","date":"2009-11-15"},
+		{"type":"blog","title":"9회 데브데이 참가 후기","url":"http://real21c.co.kr/194","name":"김동민","date":"2009-11-17"},
+		{"type":"blog","title":"Daum Dev Day 9회 참가 후기","url":"http://miyano86.blog26.fc2.com/blog-entry-44.html","name":"나오 타카토시","date":"2009-11-18"},
+		{"type":"blog","title":"Daum DevDey","url":"http://jsilva.tistory.com/entry/Daum-DevDey","name":"jsilva","date":"2009-11-17"},
+		{"type":"blog","title":"웹 기반 스펠 체커 API + 다음 오픈 에디터 플러그인","url":"http://blog.iolo.pe.kr/470","name":"iolo","date":"2009-11-19"},
+		{"type":"picture","title":"Daum DNA flickr","url":"http://www.flickr.com/photos/daumdna/sets/72157628214886909/","name":"Daum DNA Lab.","date":"2009-11-14"}
+    ]
+}};
+</script>
+</body>
+</html>

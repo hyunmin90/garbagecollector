@@ -1,0 +1,370 @@
+@charset "utf-8";
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0;}
+fieldset,img{border:0 none;}
+dl,ul,ol,menu,li {list-style:none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+input,select,textarea,button {vertical-align:middle;}
+button {border:0 none;background-color:transparent;cursor:pointer;}
+body {background:#fff;} 
+body,th,td,input,select,textarea,button {font:12px/1.5 '돋움',dotum,sans-serif;color:#333;} /* color값은 디자인가이드에 맞게사용 */
+a {color:#333;text-decoration:none;}
+a:active, a:hover {text-decoration:underline;}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal;}
+h4 {font-size:14px;}
+.t_h4{padding-top:10px;}
+.b_h4{padding-bottom:10px;}
+.l_p{padding-left: 5px;}
+.dis_in{display:inline;}
+pre, code { 
+  font-family: 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Monaco, Courier, monospace;
+  white-space:pre-wrap;
+}
+
+/* 스크롤 유지(작은 컨텐트와 긴 컨텐트의 UI 일관성 유지)*/
+body {overflow-y:scroll;}
+
+/* common */
+.ir_pm {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px;}
+.ir_wa {display:block;overflow:hidden;position:relative;width:100%;height:100%;z-index:-1;}
+.screen_out {display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px;}
+.screen_hide {font-size:0;line-height:0;visibility:hidden;}
+
+.f_l {float:left;}
+.f_r {float:right;}
+.cl_b {clear:both;width:0;height:0;font-size:0;line-height:0;}
+.show {display:block;}
+.hide {display:none;}
+.tbl {border-collapse:collapse;border-spacing: 0;margin-top:10px;} /* 테이블 초기화 */
+.tbl {border-collapse:collapse;border-spacing: 0;margin-top:10px;} /* 테이블 초기화 */
+
+
+
+/* xmp 초기화 */
+xmp {margin:0;padding:0;}
+
+/* mozilla 버튼 속성 초기화 */
+button::-moz-focus-inner {border:0;padding:0;}
+
+/* skip navigation */
+#daumIndex {overflow:hidden;position:absolute;left:-1000px;width:0;height:1px;margin:0;padding:0;}
+
+/* layout */
+#daumWrap {position:relative;width:978px;margin:auto;text-align:left;}
+#wrapMinidaum{width:978px;margin:0 auto 24px;}
+#daumHead {position:relative;width:978px;padding-top:69px} /* 2013-11-28 수정 */
+#daumHead:after {display:block;visibility:hidden;height:0;content:'';font-size:0;clear:both} /* 2013-11-28 추가 */
+#cMain {overflow:hidden;width:100%;}
+#mNav {float:left;}
+#mArticle {float:left;}
+
+/* layout_type1 */
+.dna_type1 #mNav {display:none;}
+.dna_type1 #mArticle {width:100%;}
+/* layout_type2 */
+.dna_type2 #mNav {width:168px;margin-right:41px;}
+.dna_type2 #mArticle {width:769px;}
+
+/* 2013-11-28 GNB 수정 */
+
+/* 로고 & 서비스 타이틀 영역 */
+#daumHead h1 {display:inline;float:left;margin-left:4px;font-weight:bold;font-size:32px;line-height:40px;letter-spacing:-1px}
+/* #daumLogo {display:inline;float:left;width:62px;height:26px;margin:4px 8px 0 17px;line-height:0;} 2013-11-28 삭제 */
+#daumServiceLogo {display:block;width:315px;height:37px;background:url(./images/common/img_gnb_dna.gif) no-repeat}
+
+/* 검색창
+.searchform_comm {color:#000;}
+.searchform_comm {float:right;width:347px;margin-top:-1px;color:#000;}
+.searchform_comm .bg_search {text-indent:-9999px;font-size:0;line-height:0;background:url(./images/common/bg_topsearch.gif) no-repeat;}
+.searchform_comm .box_search {float:left;width:245px;height:31px;margin-right:4px;}
+.searchform_comm .inp_keyword {display:inline;float:left;width:213px;height:18px;margin:4px;padding:3px 4px;outline:medium none;border:0 none;color:#000;background-color:transparent;}
+.searchform_comm .btn_search {overflow:hidden;float:left;width:39px;height:31px;margin-right:3px;border:0 none;background-position:0 -35px;cursor:pointer;}
+.searchform_comm .btn_search:hover {background-position:0 -66px;}
+.searchform_comm .btn_search_all {overflow:hidden;float:left;width:56px;height:31px;border:0 none;background-position:-39px -35px;cursor:pointer;}
+.searchform_comm .btn_search_all:hover {background-position:-39px -66px;}
+.searchform_comm .nosuggest {display:inline;position:relative;float:left;width:16px;height:17px;margin:7px -3px 0 0;border:0 none;background-position:-100px -35px;} 2013-11-28 삭제 */
+
+/* search */
+.ico_search {background-image:url(https://i1.daumcdn.net/svc/image/U03/common_icon/5265025001055B0001)}
+#daumSearch {float:right;position:relative;z-index:999;width:310px;margin-top:3px}
+#daumSearch .box_searchbar {float:left;background:url(https://i1.daumcdn.net/svc/image/U03/common_icon/5265025001055B0001) no-repeat;background-position:0 0}
+#daumSearch .search_on {position:relative;background-position:0 -50px}
+#daumSearch .tf_keyword {display:inline;float:left;width:370px;height:18px;margin:11px 10px 0;padding:0;border:0 none;font-weight:bold;font-size:16px;line-height:18px;font-family:'돋움',dotum,sans-serif;background-color:transparent;outline:none}
+#daumSearch .btn_search {float:left;overflow:hidden;width:66px;height:39px;border:0 none;background-position:0 -300px;cursor:pointer}
+#daumSearch .btn_search:hover  {background-position:-70px -300px}
+#daumSearch .fld_inside {position:relative;width:100%;height:31px}
+#daumSearch .fld_inside .box_searchbar {background-position: 0 -200px}
+#daumSearch .fld_inside .tf_keyword {width:242px;height:18px;margin:7px 9px 0;font-weight:normal;font-size:12px;line-height:1.5}
+#daumSearch .fld_inside .btn_search {width:50px;height:31px;background-position:100% -200px}
+#daumSearch .fld_inside .btn_search:hover {background-position:100% -300px}
+#daumSearch .fld_inside .bg_on {background:url(https://i1.daumcdn.net/svc/image/U03/common_icon/5265025001055B0001) no-repeat 2px -422px}
+#daumSearch .fld_inside .search_on {background-position:0 -250px}
+#daumSearch .fld_inside .search_on .btn_search {background-position:100% -250px}
+#daumSearch .fld_inside .search_on .btn_search:hover {background-position:100% -300px}
+/* suggest */
+.suggestBox {display:none;position:absolute;top:30px;left:0;width:308px;border:1px solid #a5a6ac;border-top-color:#3f78df;font-family:'돋움',dotum,sans-serif;background-color:#fff;font-size:12px;line-height:17px;z-index:9999}
+.suggestBox a, .suggestBox a:visited, .suggestBox a:link, .suggestBox a:active {text-decoration:none}
+.suggestBox ul, .suggestBox li {margin:0;padding:0;list-style:none}
+.suggestBox .list {min-height:98px;height:auto !important;height:98px;padding:3px 0 5px;color:#000}
+.suggestBox .list li {overflow:hidden;height:21px;margin:0;padding:2px 10px 0;text-overflow:ellipsis;background-color:#fff;line-height:21px;cursor:pointer}
+.suggestBox li.on {background-color:#f0f0f0}
+.suggestBox li strong {color:#e5333d;font-weight:normal}
+.suggestBox li .item {display:block;height:100%}
+.suggestBox .line {overflow:hidden;height:1px;padding:0;margin:5px 0px 3px;background-color:#e5e5e5;line-height:1px;font-size:1px}
+.suggestBox .guide {padding:13px 10px 11px;color:#555}
+.suggestBox .footer {display:none;position:relative;height:20px;margin:0;padding:4px 10px 0;background-color:#f8f8f8;font-size:11px;letter-spacing:-1px;clear:both}
+.suggestBox .footer a {color:#777}
+.suggestBox .footer .fl {float:left}
+.suggestBox .footer .fr {display:none;float:right}
+.suggestBox .footer .bar {padding:0px 5px 0px 4px;color:#cbcbcb}
+.suggestBox .footer .offGuide {display:none;position:absolute;right:0;bottom:19px;width:211px;height:27px;background:url(https://i1.daumcdn.net/imgsrc.search/search_all/2009/image/suggest_service.gif) no-repeat;text-indent:-9999px}
+
+/* 미니다음 개별레이아웃 */
+#wrapMinidaum {position:absolute;top:0;left:0;width:978px;margin:0 auto}
+
+/* minidaum
+#DaumUI__minidaum_stat {padding-top:3px !important;}
+#DaumUI__minidaum_list {padding-top:2px !important;}
+#DaumUI__minidaum_etc {padding-top:3px !important;} 2013-11-28 삭제 */
+
+/* GNB */
+#daumGnb {float:left;position:relative;width:978px;height:44px;border-top:2px solid #333;margin-top:23px;background:url(./images/common/img_gnb_dna.gif) no-repeat 0 -100px}
+#daumGnb li {float:left}
+#daumGnb .gnb_comm {float:left}
+.gnb_comm .link_gnb, .gnb_with .link_gnb {display:block;height:44px;margin-right:1px;line-height:44px;font-weight:bold;font-size:14px;background:url(./images/common/img_gnb_dna.gif) no-repeat;letter-spacing:-1px;text-align:center}
+.gnb_comm .link_gnb1 {width:75px;background-position:0 -100px}
+.gnb_comm .link_gnb2 {width:77px;background-position:-76px -100px}
+.gnb_comm .link_gnb3 {width:76px;background-position:-154px -100px}
+.gnb_comm .link_gnb4 {width:81px;background-position:-231px -100px}
+.gnb_comm .link_gnb5 {width:81px;background-position:-313px -100px}
+.gnb_comm .link_gnb6 {width:94px;background-position:-395px -100px}
+.gnb_comm .link_gnb7 {width:95px;margin-right:0;background-position:-490px -100px}
+.gnb_comm .link_gnb1:hover, .gnb_comm .link_gnb1:focus, .gnb_comm .on .link_gnb1, .gnb_comm .on .link_gnb1:hover, .gnb_comm .on .link_gnb1:focus {background-position:0 -150px}
+.gnb_comm .link_gnb2:hover, .gnb_comm .link_gnb2:focus, .gnb_comm .on .link_gnb2, .gnb_comm .on .link_gnb2:hover, .gnb_comm .on .link_gnb2:focus {background-position:-76px -150px}
+.gnb_comm .link_gnb3:hover, .gnb_comm .link_gnb3:focus, .gnb_comm .on .link_gnb3, .gnb_comm .on .link_gnb3:hover, .gnb_comm .on .link_gnb3:focus {background-position:-154px -150px}
+.gnb_comm .link_gnb4:hover, .gnb_comm .link_gnb4:focus, .gnb_comm .on .link_gnb4, .gnb_comm .on .link_gnb4:hover, .gnb_comm .on .link_gnb4:focus {background-position:-231px -150px}
+.gnb_comm .link_gnb5:hover, .gnb_comm .link_gnb5:focus, .gnb_comm .on .link_gnb5, .gnb_comm .on .link_gnb5:hover, .gnb_comm .on .link_gnb5:focus {background-position:-313px -150px}
+.gnb_comm .link_gnb6:hover, .gnb_comm .link_gnb6:focus, .gnb_comm .on .link_gnb6, .gnb_comm .on .link_gnb6:hover, .gnb_comm .on .link_gnb6:focus {background-position:-395px -150px}
+.gnb_comm .link_gnb7:hover, .gnb_comm .link_gnb7:focus, .gnb_comm .on .link_gnb7, .gnb_comm .on .link_gnb7:hover, .gnb_comm .on .link_gnb7:focus {background-position:-490px -150px} 
+#daumGnb .gnb_with {display:inline;float:left;margin-left:13px}
+.gnb_with .link_gnb {margin-right:0}
+.gnb_with .link_gnb1 {width:48px;background-position:-598px -100px}
+.gnb_with .link_gnb2 {width:49px;background-position:-646px -100px}
+.gnb_with .link_gnb3 {width:73px;background-position:-695px -100px}
+.gnb_with .link_gnb1:hover, .gnb_with .link_gnb1:focus, .gnb_with .on .link_gnb1, .gnb_with .on .link_gnb1:hover, .gnb_with .on .link_gnb1:focus {background-position:-598px -150px}
+.gnb_with .link_gnb2:hover, .gnb_with .link_gnb2:focus, .gnb_with .on .link_gnb2, .gnb_with .on .link_gnb2:hover, .gnb_with .on .link_gnb2:focus {background-position:-646px -150px}
+.gnb_with .link_gnb3:hover, .gnb_with .link_gnb3:focus, .gnb_with .on .link_gnb3, .gnb_with .on .link_gnb3:hover, .gnb_with .on .link_gnb3:focus {background-position:-695px -150px}
+#daumGnb .link_app {position:absolute;top:7px;right:0;overflow:hidden;width:70px;height:30px;background:url(./images/common/img_gnb_dna.gif) no-repeat 0 -50px;text-indent:-9999px}
+/* 2013-11-28 GNB 수정 끝 */
+
+/* daumFooter */
+.footer_dna {width:100%;padding:19px 0;font-size:10px;line-height:18px;text-align:center;color:#a5a5a5;clear:both;margin-top:10px;}
+.footer_dna .link_info {font-size:11px; color:#666;}
+.footer_dna .copyright {padding-top:4px;font-size:11px;font-style:normal;color:#666;}
+.footer_dna .link_daum {color:#666;}
+
+/* mNav */
+#mNav .list_menu {overflow:hidden;width:166px;border:1px solid #d5d5d5;border-top:0 none;}
+#mNav .list_menu .box_menu {float:left;width:110px;padding:15px 28px 11px;border-top:1px solid #d5d5d5;}
+#mNav .list_submenu {overflow:hidden;width:100%;}
+#mNav .list_submenu li {float:left;width:100%;}
+#mNav .list_submenu .link {font-family:'돋움', dotum;font-size:12px;line-height:18px;color:#333;}
+#mNav .list_submenu .on {color:#6b94f1;}
+#mNav .list_submenu .on .link {font-weight:bold;letter-spacing:-1px;text-decoration:none;color:#6b94f1;}
+
+/* common */
+#daumContent {margin-top:16px;}
+.ico_comm {background:url(./images/ico_comm.gif) no-repeat;}
+.tit_comm {display:block;overflow:hidden;font-size:0;line-height:0;text-indent:-9999px;background:url(./images/common/tit_comm.gif) no-repeat;}
+.btn_comm {display:block;overflow:hidden;border:0 none;font-size:0;line-height:0;text-indent:-9999px;cursor:pointer;background:url(./images/common/btn_comm.gif) no-repeat;}
+.btn_type1 {overflow:hidden;float:left;height:22px;background-position:0 -100px;}
+.btn_type1:hover {text-decoration:none;}
+.btn_type1 .btn_end {display:inline;float:right;height:23px;font-size:11px;line-height:23px;letter-spacing:-2px;text-align:center;text-indent:-2px;background-position:100% -100px;}
+.inp_chk {float:left;width:13px;height:13px;margin-top:2px;vertical-align:middle;}
+.lab_chk {float:left;margin:2px 0 0 6px;line-height:14px;cursor:pointer;}
+/*.inp_radio {float:left;width:20px;height:20px;}*/
+.inp_radio {float:left;margin-top: 4px;}
+.lab_radio {float:left;margin:4px 21px 0 2px;line-height:14px;cursor:pointer;}
+.tf_comm {height:16px;padding:1px 5px 3px;border:1px solid #cfcfcf;}
+.tf_file {height:22px;}
+.opt_comm {height:22px;border:1px solid #cfcfcf;}
+.thumb {display:block;}
+.thumb_img {display:block;}
+
+.tbl_type1 {width:100%;}
+.tbl_type1 thead th, .tbl_type1 thead td {height:1px;background-color:#dbdbdb;}
+.tbl_type1 tbody th, .tbl_type1 tbody td {border-bottom:1px solid #f0f0f0;}
+.tbl_type1 .col_th {width:125px;font-weight:bold;letter-spacing:-1px;/*text-indent:8px*/;padding-left:8px;text-align:left;background-color:#fafafa;}
+.tbl_type1 .col_td {padding:10px 16px; word-break:break-all;}
+.tbl_type1 .txt_caution {margin-bottom:-4px;}
+.tbl_type1 .row_chk .col_td {padding:13px 16px;}
+.tbl_type1 .row_radio .col_td {padding-top:12px}
+.tbl_type1 .row_radio .txt_caution {padding-top:2px;}
+.tbl_type1 .row_icon .col_td {padding:12px 16px 11px;}
+.tbl_type2 {width:100%;border:1px solid #d5d5d5;clear:both;}
+.tbl_type2 th, .tbl_type2 td {border:1px solid #d5d5d5;text-align:center;}
+.tbl_type2 thead th {padding:12px 0 10px;border-bottom:0 none;font-weight:bold;font-size:11px;line-height:13px;letter-spacing:-1px;color:#545a66;background-color:#eaebee;}
+.tbl_type2 tbody th {font-weight:bold;letter-spacing:-1px;}
+.tbl_type2 tbody td {padding:6px 0 7px;}
+.tbl_type2 tbody .col_count {padding-right:40px;text-align:right;}
+
+.list_process {overflow:hidden;width:600px;height:17px;padding:41px 0 39px;font-size:0;line-height:0;text-indent:-9999px;background:url(./images/common/img_process.gif) no-repeat 8px 41px;}
+.list_process li {font-size:0;line-height:0;text-indent:-9999px;}
+.list_process_affiliate {overflow:hidden;width:600px;height:17px;padding:41px 0 39px;font-size:0;line-height:0;text-indent:-9999px;background:url(./images/common/img_process_affiliate.gif) no-repeat 8px 41px;}
+.list_process_affiliate li {font-size:0;line-height:0;text-indent:-9999px;}
+
+
+
+/* 목록 */
+/* 불릿, 링크 */
+.list_type1 {overflow:hidden;width:100%;}
+.list_type1 li {overflow:hidden;float:left;width:100%;height:22px;font-size:12px;line-height:22px;background:url(./images/common/ico_bullet.gif) no-repeat 0 9px;}
+.list_type1 .tit {float:left;margin-left:10px;}
+.list_type1 .time {float:right;margin-top:6px;font-size:11px;line-height:13px;text-align:right;white-space:nowrap;color:#999;}
+/* 넘버, 링크*/
+.list_type2 {overflow:hidden;width:100%;}
+.list_type2 li {overflow:hidden;float:left;width:100%;height:22px;font-size:12px;line-height:22px;background:url(./images/ico_comm.gif) no-repeat;}
+.list_type2 .num1 {background-position:0 5px;}
+.list_type2 .num2 {background-position:0 -20px;}
+.list_type2 .num3 {background-position:0 -45px;}
+.list_type2 .num4 {background-position:0 -70px;}
+.list_type2 .num5 {background-position:0 -95px;}
+.list_type2 .link {float:left;margin-left:19px;}
+/* 불릿 */
+.list_type3 {overflow:hidden;width:100%;}
+.list_type3 li {overflow:hidden;float:left;width:100%;font-size:12px;line-height:22px;text-indent:12px;background:url(./images/common/ico_bullet.gif) no-repeat 0 9px;}
+/* 불릿, 링크, 레이블 */
+.list_type4 {overflow:hidden;width:654px;margin-left:16px;}
+.list_type4 li {overflow:hidden;float:left;width:50%;height:22px;font-size:12px;line-height:22px;background:url(./images/common/ico_bullet.gif) no-repeat 0 9px;}
+.list_type4 .tit {float:left;margin:0 5px 0 8px;}
+
+.layer_comm {position:absolute;padding:11px 14px 9px;border:1px solid #757575;font-size:11px;line-height:16px;color:#666;background-color:#fff;}
+.layer_comm .ico_arr {display:block;overflow:hidden;position:absolute;top:-6px;left:38px;width:9px;height:6px;font-size:0;line-height:0;text-indent:-9999px;background-position:0 -150px;}
+
+
+.tit_article {height:26px;padding:19px 8px 0;border-bottom:2px solid #666;}
+.link_more {position:absolute;width:36px;height:18px;background-position:0 -71px !important;}
+.wrap_hotlink {overflow:hidden;width:146px;height:66px;margin:40px auto 34px;cursor:default;}
+.wrap_hotlink .btn_api {float:left;width:56px;height:66px;margin-right:19px;}
+.wrap_hotlink .btn_oauth {float:left;width:71px;height:66px;}
+
+.iframe {overflow:hidden;width:100%;margin-bottom:60px;}
+
+/* 2012-01-03 수정 내용 시작 */
+/* 제목(이미지+일반폰트형) */
+.category {overflow:hidden;width:100%;}
+.category .tit_main {float:left;height:17px;}
+.category .tit_sub {float:left;height:16px;padding-top:1px;font-size:14px;line-height:17px;}
+/* 안내, 명예의전당, */
+.section_guide {overflow:hidden;width:100%;padding:11px 0 32px;}
+.section_guide .tit_guide {display:inline;float:left;width:24px;height:12px;margin:13px 0 0 8px;background-position:0 0;}
+.section_guide .wrap_cont {float:right;width:686px;}
+.section_guide .txt_info {margin-bottom:7px;padding:10px 15px 9px;background-color:#fafafa;}
+.section_fame {overflow:hidden;width:100%;padding:11px 0 51px;border-top:1px solid #dedede;}
+.section_fame .tit_fame {display:inline;float:left;width:62px;height:13px;margin-left:8px;background-position:0 -25px;}
+.section_fame .list_fame {float:left;width:696px;margin-left: 30px;}
+.section_fame .list_fame li {float:left;width:116px;padding:10px 0 0 0;}
+.section_fame .list_fame .thumb {width:60px;margin:0 auto;}
+.section_fame .list_fame .txt {padding:7px 12px 0;text-align:center;line-height:16px;letter-spacing:-1px;}
+
+.section_fame .list_fame .play {padding:7px 0 0;text-align:center;line-height:16px;letter-spacing:-1px;font: 12px/1.5 '돋움',dotum,sans-serif;;}
+
+/* 레이블 */
+/* HOT, NEW */
+.ico_label {float:left;height:13px;margin:3px 3px 0 0;font-family:Tahoma;font-size:11px;line-height:13px;text-align:center;color:#fff;cursor:default;}
+.ico_new {width:13px;background-color:#578af3;}
+.ico_hot {width:13px;background-color:#ff5649;}
+/* 난이도 */
+.ico_lv {float:left;width:18px;height:13px;margin:3px 3px 0 0;text-indent:-9999px;}
+.ico_lv1 {background-position:0 -325px;}
+.ico_lv2 {background-position:0 -350px;}
+.ico_lv3 {background-position:0 -375px;}
+/* 플렉서블형 */
+.lab_comm {overflow:hidden;float:left;height:13px;margin:3px 3px 0 0;font-size:11px;line-height:13px;text-indent:0;}
+.lab_comm:hover {text-decoration:none;}
+.lab_comm .lab_end {display:inline;float:left;height:14px;margin:-1px 0 0 4px;padding-right:3px;font-family:Tahoma;font-size:11px;line-height:14px;text-align:center;text-indent:0;color:#fff;}
+.lab_red {background-position:0 -125px;}
+.lab_red .lab_end {margin:0 0 0 3px;padding:1px 4px 0 0;font-family:'돋움', dotum;letter-spacing:-1px;background-position:100% -125px;}
+.lab_blue {background-position:0 -150px;}
+.lab_blue .lab_end {background-position:100% -149px;}
+.lab_gray {background-position:0 -175px;}
+.lab_gray .lab_end {background-position:100% -174px;}
+/* 텍스트고정형 */
+.lab_type1 {float:left;width:37px;height:15px;font-family:Tahoma;font-size:11px;line-height:15px;text-align:center;color:#fff;background-color:#578af3;}
+.lab_type2 {float:left;width:37px;height:15px;font-weight:normal;font-family:'돋움', dotum;font-size:11px;line-height:15px;letter-spacing:-2px;text-align:center;color:#fff;background-color:#938282;}
+.lab_type3 {float:right;width:56px;height:15px;font-weight:normal;font-family:'돋움', dotum;font-size:11px;line-height:15px;letter-spacing:-1px;text-align:center;color:#fff;background-color:#938282;}
+/* 우측에 붙는 레이블, 펑션 영역 */
+.box_type .wrap_type {float:right;clear:both;}
+.wrap_title {position:relative;width:100%;}
+.wrap_title .box_type {overflow:hidden;position:absolute;bottom:8px;right:7px;width:100%;}
+.wrap_title .box_type .lab_comm {margin-top:5px;}
+.wrap_title .box_func {overflow:hidden;position:absolute;bottom:9px;right:12px;}
+/* 2012-01-03 수정 내용 끝 */
+
+/* 2012-03-20 */
+.tit_article {height:25px;font-size:16px;letter-spacing:-1px;padding:17px 0 3px 6px;}
+.tit_section {margin-top:-2px;padding:0 0 4px 7px;font-size:12px;}
+.tit_section_new {margin-top:-2px;padding:0 0 4px 0;font-size:12px;}
+
+/* 2012-03-20 */
+.popup_msg{
+	position:absolute;
+	z-index:10;
+	width:172px;
+	display:none;
+	border:1px solid #646464;
+	padding:5px;
+	background-color:white;
+}
+
+#newPreview
+{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale);
+}
+.fame_gray{color:#AEAEAE;}
+
+
+/* 2012-08-02 반응형 테스트 */
+
+/* =Media Print
+-------------------------------------------------------------- */
+@media print {
+    h1 {
+	    page-break-before:always;
+    }
+    h1,  h2,  h3,  h4,  h5,  h6 {
+	    page-break-after:avoid;
+    }
+    ul,  ol,  dl {
+	    page-break-before:avoid;
+    }
+}
+/*
+@media (max-width:800px) { 
+#wrapMinidaum {display: none;}
+#daumWrap, #daumHead {width: 100%;}
+   .searchform_comm {clear:both;}
+   .gnb_dna ul, 
+   .gnb_aside li {
+	    float:none;
+	    text-align:center;
+    }
+
+.dna_type2 #mArticle { width: 100%;}
+.dna_type2 #mNav { display: none;}
+.list_thumb li {clear:both;}
+.list_fame li {clear:both;}
+}
+*/
+
+/* tag 변경 - tag 설명 숨기기*/
+div.popuup_tag {
+	display:none;
+}
+
+/* form입력 크기 */
+.d_i_40{width:350px;}
+
+.side_banner img{ border:1px solid #d5d5d5;}

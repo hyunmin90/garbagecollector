@@ -1,0 +1,145 @@
+<html>
+<head>
+	<html lang="ko">
+	<title>Daum DNA 개발자 네트워크 : Daum DNA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel="stylesheet" type="text/css" href="./assets/dna_common.css">	
+	<link rel="stylesheet" type="text/css" href="./assets/dna_share.css">	
+	<script src="http://s1.daumcdn.net/svc/original/U0301/cssjs/jquery/jquery-1.7.2.min.js"></script>
+	<script src="./assets/devday/devday.js"></script>
+</head>
+<body>
+<div class="wrap_list">
+	<ul class="list_evt">
+		<li class="on" >
+			<div class="wrap_fold">
+				<div class="wrap_tab tab_type1">
+					<ul id="d_tabmenu" class="tab_comm tab_evt">
+						<li class="on intro">
+							<a href="#" onclick="javascript:selectIntro();return false;" class="link menu1">소개</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cont_tab cont_on">
+					<div class="cont_intro" >
+						<strong class="screen_out">소개</strong>
+						<div class="thumb"><img src="" class="thumb_img" width="257" height="179" alt=""></div>
+						<div class="cont">
+							<strong class="tit"></strong>
+							<div class="txt"></div>
+						</div>
+					</div>
+					<div class="cont_project" style="display: none;">
+						<strong class="screen_out">프로젝트</strong>
+						<ul class="list"></ul>
+					</div>
+					<div class="cont_gallery" style="display: none;">
+						<strong class="screen_out">갤러리</strong>
+						<div class="viewer">
+						</div>
+						<div class="box_gallery">
+							<strong class="screen_out">목록</strong>
+							<div class="box_slide">
+								<ul class="list_video" style="left:-0px;width:3000px;">
+								</ul>
+							</div>
+							
+							<a href="#" class="btn_share btn_prev" onclick="javascript:galleryPrev();return false;">이전</a>
+							<a href="#" class="btn_share btn_next" onclick="javascript:galleryNext();return false;">다음</a>
+							
+						</div>
+					</div>
+					<div class="cont_respond" style="display: none;">
+						<strong class="screen_out">반응모음</strong>
+							<!--
+							<div class="respond fst">
+								<strong class="tit_share tit_photo">사진모음</strong>
+								<ul class="list">
+									<li>
+										<a href="#" class="link">플리커 사진</a>
+									</li>
+									<li>
+										<a href="#" class="link">다음 클라우드</a>
+									</li>
+								</ul>
+							</div>
+							 -->
+							<div class="respond">
+								<strong >관련 글 모음</strong>
+								<!-- <strong class="tit_share tit_relation">관련 글 모음</strong> -->
+								<ul class="list" id="d_bloglist">
+								</ul>
+							</div>
+							<!-- 
+							<div class="respond">
+								<strong class="tit_share tit_short">관련 짧은 글 모음</strong>
+								<ul class="list list_short">
+									<li>
+										<span class="ico_share ico_twitter">트위터</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">후크선장</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_facebook">페이스북</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_yozm">요즘</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_me2day">미투데이</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+								</ul>
+							</div>
+							 -->
+						</div>
+				</div>
+			</div>
+			<a target="_parent" class="btn_fold btn_open" href="/pages/share/devday">목록으로</a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+var data = {
+"name":"devday-11회",
+"id":11,
+"title":"제11회 Daum DevDay",
+"msg1":"DevOn과 함께 DevDay를 시작합니다!",
+"msg2":"Daum 오픈API의 새로 바뀌는 정책 소개",
+"msg3":"모바일 지도API",
+"desc":"작년 6월 10회 DevDay를 마지막으로 열리지 않았던 DevDay를 다시 시작합니다! 이번 DevDay는 저희가 이번에 처음으로 주최하는 DevOn이라는 행사와 함께 아래와 같이 진행됩니다. 이번 행사에서는 Daum 오픈API의 새로 바뀌는 정책 소개, 업데이트된 지도API, 추후 공개하게 될 모바일 지도API에 대해서 다룰 예정입니다.",
+"image1":"main.jpg",
+"place":"신도림 쉐라톤 서울 호텔 디큐브시티 7F",
+"date":"2011-11-25 (1일)",
+"itemindex":"",
+"useProject":false,
+"useGallery":true,
+"items":{
+	"galleries":[
+		{"type": "image", "tn":"./assets/devday/11/tn1.png", "url":"./assets/devday/11/question1.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn2.png", "url":"./assets/devday/11/question2.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn3.png", "url":"./assets/devday/11/nametag.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn4.png", "url":"./assets/devday/11/ice1.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn5.png", "url":"./assets/devday/11/ice2.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn6.png", "url":"./assets/devday/11/focus.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn7.png", "url":"./assets/devday/11/explain.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn8.png", "url":"./assets/devday/11/devday.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"}
+
+    ],
+    "social":[
+		{"type":"picture","title":"Daum DNA flickr","url":"http://www.flickr.com/photos/daumdna/sets/72157628214886909/","name":"Daum DNA Lab.","date":"2011-11-25"}
+    ]
+}};
+</script>
+</body>
+</html>

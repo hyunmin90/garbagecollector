@@ -1,0 +1,1 @@
+<div style="height:<?php echo $tong_img_height;?>px;background-image:url('<?php echo $tong_img_path.'?'.date('YmdHis');?>');background-repeat: no-repeat;"></div>

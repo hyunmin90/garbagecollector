@@ -1,0 +1,350 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+
+html{
+	background:url('../img/background.jpg') #fefefe;
+	position:relative;
+}
+
+body{
+    padding: 200px 0 0;
+	font:14px/1.3 'Segoe UI',Arial, sans-serif;
+	min-height:500px;
+}
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	color:#54a6de;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+section, footer, nav{
+	display: block;
+}
+
+
+/*----------------------------
+	The Navigation Menu
+-----------------------------*/
+
+#colorNav{
+
+	position: absolute;
+	left:40%;
+}
+
+#colorNav > ul{
+	width: 450px; /* Increase when adding more menu items */
+	margin:0 auto;
+}
+
+#colorNav > ul > li{ /* will style only the top level li */
+	height:80px;
+	list-style: none;
+	box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset,1px 1px 1px #CCC;
+	display: inline-block;
+	line-height: 1;
+	margin: 1px;
+	border-radius: 3px;
+	position:relative;
+}
+
+#colorNav > ul > li > a{
+	margin-top: 6px;
+	color:inherit;
+	text-decoration:none !important;
+	font-size:24px;
+	padding: 36px;
+}
+
+#colorNav li ul{
+	position:absolute;
+	list-style:none;
+	text-align:center;
+	width:180px;
+	left:50%;
+	margin-left:-90px;
+	top:70px;
+	font:bold 12px 'Open Sans Condensed', sans-serif;
+	
+	/* This is important for the show/hide CSS animation */
+	max-height:0px;
+	overflow:hidden;
+	
+	-webkit-transition:max-height 0.4s linear;
+	-moz-transition:max-height 0.4s linear;
+	transition:max-height 0.4s linear;
+}
+
+#colorNav li ul li{
+	background-color:#313131;
+}
+
+#colorNav ul li ul li{
+	color:white;
+
+}
+
+#colorNav li ul li a{
+
+	padding:12px;
+	color:#fff !important;
+	text-decoration:none !important;
+	display:block;
+}
+
+#colorNav li ul li:nth-child(odd){ /* zebra stripes */
+	background-color:#363636;
+}
+
+#colorNav li ul li:hover{
+	background-color:#444;
+}
+
+#colorNav li ul li:first-child{
+	border-radius:3px 3px 0 0;
+	margin-top:25px;
+	position:relative;
+}
+
+#colorNav li ul li:first-child:before{ /* the pointer tip */
+	content:'';
+	position:absolute;
+	width:1px;
+	height:1px;
+	border:5px solid transparent;
+	border-bottom-color:#313131;
+	left:50%;
+	top:-10px;
+	margin-left:-5px;
+}
+
+#colorNav li ul li:last-child{
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+/* This will trigger the CSS */
+/* transition animation on hover */
+
+#colorNav li:hover ul{
+	max-height:200px; /* Increase when adding more dropdown items */
+}
+
+
+/*----------------------------
+	Color Themes
+-----------------------------*/
+
+
+#colorNav li.green{
+	/* This is the color of the menu item */
+	background-color:#00c08b;
+	
+	/* This is the color of the icon */
+	color:#127a5d;
+}
+
+#colorNav li.red{		background-color:#ea5080;color:#aa2a52;}
+#colorNav li.blue{		background-color:#53bfe2;color:#2884a2;}
+#colorNav li.yellow{	background-color:#f8c54d;color:#ab8426;}
+#colorNav li.purple{	background-color:#df6dc2;color:#9f3c85;}
+#colorNav li.black{
+	/* This is the color of the menu item */
+	background-color:grey;
+	
+	/* This is the color of the icon */
+	color:#127a5d;
+}
+
+/*----------------------------
+	The Footer
+-----------------------------*/
+
+
+footer{
+	background-color: #111111;
+	bottom: 0;
+	box-shadow: 0 -1px 2px #111111;
+	height: 45px;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100000;
+}
+
+footer h2{
+	color: #EEEEEE;
+	font-size: 14px;
+	font-weight: normal;
+	left: 50%;
+	margin-left: -400px;
+	padding: 13px 0 0;
+	position: absolute;
+	width: 540px;
+}
+
+footer h2 i{
+	font-style:normal;
+	color:#888;
+}
+
+footer a.tzine,a.tzine:visited{
+	color: #999999;
+	font-size: 12px;
+	left: 50%;
+	margin: 16px 0 0 110px;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+}
+
+footer a i{
+	color:#ccc;
+	font-style: normal;
+}
+
+footer a i b{
+	color:#c92020;
+	font-weight: normal;
+}
+.icon-php {
+    background-image: url("https://cdn1.iconfinder.com/data/icons/simple-icons/64/php-64-black.png");
+    background-position: center center;
+ background-repeat: no-repeat;
+}
+.icon-nodejs{
+  background-image: url("https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-64.png");
+    background-position: center center;
+   background-repeat: no-repeat;
+
+}
+.icon-jsp{
+  background-image: url("https://cdn1.iconfinder.com/data/icons/free-mobile-icon-kit/64/Java.png");
+    background-position: center center;
+   background-repeat: no-repeat;
+}
+.icon-pythondjango
+{
+  background-image: url("https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/Python_logo-64.png");
+    background-position: center center;
+   background-repeat: no-repeat;
+}
+.icon-ruby
+{
+   background-image: url("https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/158/Ruby_on_Rails_2-64.png");
+    background-position: center center;
+   background-repeat: no-repeat;
+
+
+}
+
+#specselection{
+	position: absolute;
+left: 18%;
+padding-top: 46px;
+}
+
+#vmname{
+	padding-top:3%;
+	padding-left: 0%;
+
+}
+#spec{
+	width: 450px; /* Increase when adding more menu items */
+	margin:0 auto;
+
+}
+
+#colorNav > ul{
+	width: 450px; /* Increase when adding more menu items */
+	margin:0 auto;
+}
+
+#colorNav > ul > li{ /* will style only the top level li */
+	height:80px;
+	list-style: none;
+	box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset,1px 1px 1px #CCC;
+	display: inline-block;
+	line-height: 1;
+	margin: 1px;
+	border-radius: 3px;
+	position:relative;
+}
+#specdetail{
+	padding-top:15px;
+}
+#submit{
+	margin-top:20px;
+	text-align: center;
+
+}
+.details{
+	display:none;
+}
+#listform{
+	margin-left:30%;
+	width:50%;
+}
+#loading{
+	margin-left: 30%;
+}
+
+
+.running{
+  background-image: url(/assets/img/green.png);
+  background-repeat: no-repeat;
+  color: #008000;
+  background-position: -9px -7px;
+
+}
+.stopping{
+  background-image: url(/assets/img/red.png);
+  background-repeat: no-repeat;
+  color: #FF0216;
+  background-position: -9px -7px;
+
+}
+.stopped{
+background-image: url(/assets/img/red.png);
+  background-repeat: no-repeat;
+  color: #FF0216;
+  background-position: -9px -7px;
+
+}
+.starting{
+background-image: url(/assets/img/green.png);
+  background-repeat: no-repeat;
+  color: #008000;
+  background-position: -9px -7px;
+	
+}
+.error{
+background-image: url(/assets/img/red.png);
+  background-repeat: no-repeat;
+  color: #FF0216;
+  background-position: -9px -7px;
+
+}
+
+#specbutton{
+
+	margin-top: 3px;
+}

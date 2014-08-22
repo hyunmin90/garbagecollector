@@ -1,0 +1,18 @@
+{"name":"DevOn-2회",
+"id":2,
+"title":"Daum DevOn 2012",
+"itemindex":"",
+"useProject":true,
+"useGallery":true,
+"items":{
+	"galleries":[
+		{"type":"iframe","tn":"/include/share/devon/2/tn1.jpg","url":"/include/share/devon/2/g1.html","title":"회의중인 모습"},
+	    {"type":"iframe","tn":"/include/share/devon/2/tn2.jpg","url":"/include/share/devon/2/g2.html","title":"회의중인 모습"},
+	    {"type":"iframe","tn":"/include/share/devon/2/tn3.png","url":"/include/share/devon/2/g3.html","title":"회의중인 모습"},
+	    {"type":"image","tn":"/include/share/devon/2/tn4.jpg","url":"http://farm9.staticflickr.com/8194/8084188968_cb6d92b4c0_o.jpg","title":"회의중인 모습"},
+	    {"type":"image","tn":"/include/share/devon/2/tn5.jpg","url":"http://farm9.staticflickr.com/8051/8084202542_c2af2c6bb9_o.jpg","title":"회의중인 모습"},
+	    {"type":"image","tn":"/include/share/devon/2/tn6.jpg","url":"http://farm9.staticflickr.com/8051/8084285403_d0c4e033d2_o.jpg","title":"회의중인 모습"},
+		{"type":"image","tn":"/include/share/devon/2/tn7.jpg","url":"http://farm9.staticflickr.com/8191/8085605280_15cb003010.jpg","title":"초대 - 행사순서에 관한 예시"},
+		{"type":"image","tn":"/include/share/devon/2/tn8.jpg","url":"http://farm9.staticflickr.com/8049/8085606695_fb529057b5.jpg","title":"추첨하는 사진"}
+   	]
+}}

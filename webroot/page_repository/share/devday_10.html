@@ -1,0 +1,151 @@
+<html>
+<head>
+	<html lang="ko">
+	<title>Daum DNA 개발자 네트워크 : Daum DNA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel="stylesheet" type="text/css" href="./assets/dna_common.css">	
+	<link rel="stylesheet" type="text/css" href="./assets/dna_share.css">	
+	<script src="http://s1.daumcdn.net/svc/original/U0301/cssjs/jquery/jquery-1.7.2.min.js"></script>
+	<script src="./assets/devday/devday.js"></script>
+</head>
+<body>
+<div class="wrap_list">
+	<ul class="list_evt">
+		<li class="on" >
+			<div class="wrap_fold">
+				<div class="wrap_tab tab_type1">
+					<ul id="d_tabmenu" class="tab_comm tab_evt">
+						<li class="on intro">
+							<a href="#" onclick="javascript:selectIntro();return false;" class="link menu1">소개</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cont_tab cont_on">
+					<div class="cont_intro" >
+						<strong class="screen_out">소개</strong>
+						<div class="thumb"><img src="" class="thumb_img" width="257" height="179" alt=""></div>
+						<div class="cont">
+							<strong class="tit"></strong>
+							<div class="txt"></div>
+						</div>
+					</div>
+					<div class="cont_project" style="display: none;">
+						<strong class="screen_out">프로젝트</strong>
+						<ul class="list"></ul>
+					</div>
+					<div class="cont_gallery" style="display: none;">
+						<strong class="screen_out">갤러리</strong>
+						<div class="viewer">
+						</div>
+						<div class="box_gallery">
+							<strong class="screen_out">목록</strong>
+							<div class="box_slide">
+								<ul class="list_video" style="left:-0px;width:3000px;">
+								</ul>
+							</div>
+							
+							<a href="#" class="btn_share btn_prev" onclick="javascript:galleryPrev();return false;">이전</a>
+							<a href="#" class="btn_share btn_next" onclick="javascript:galleryNext();return false;">다음</a>
+							
+						</div>
+					</div>
+					<div class="cont_respond" style="display: none;">
+						<strong class="screen_out">반응모음</strong>
+							<!--
+							<div class="respond fst">
+								<strong class="tit_share tit_photo">사진모음</strong>
+								<ul class="list">
+									<li>
+										<a href="#" class="link">플리커 사진</a>
+									</li>
+									<li>
+										<a href="#" class="link">다음 클라우드</a>
+									</li>
+								</ul>
+							</div>
+							 -->
+							<div class="respond">
+								<strong >관련 글 모음</strong>
+								<!-- <strong class="tit_share tit_relation">관련 글 모음</strong> -->
+								<ul class="list" id="d_bloglist">
+								</ul>
+							</div>
+							<!-- 
+							<div class="respond">
+								<strong class="tit_share tit_short">관련 짧은 글 모음</strong>
+								<ul class="list list_short">
+									<li>
+										<span class="ico_share ico_twitter">트위터</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">후크선장</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_facebook">페이스북</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_yozm">요즘</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_me2day">미투데이</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+								</ul>
+							</div>
+							 -->
+						</div>
+				</div>
+			</div>
+			<a target="_parent" class="btn_fold btn_open" href="/pages/share/devday">목록으로</a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+var data = {"name":"devday-10회",
+"id":10,
+"title":"제10회 Daum DevDay",
+"msg1":"DevDay 참석하고 iPad 받자!",
+"msg2":"라이브코딩!!",
+"msg3":"",
+"desc":"제10회 Daum DevDay(부제: Dev on Daum) DevDay 참석하고 iPad 받자! 제10회 Daum DevDay(부제: Dev on Daum)는 Daum 오픈 API 관련 튜토리얼과 참가자들이 직접 코딩에 참여하는 세션으로 진행되는 행사로 다양한 이벤트와 경품이 함께 합니다.",
+"image1":"peoples.jpg",
+"place":"서울시 서초구 서초로 398 KISA 아카데미",
+"date":"2010-06-26 (1일)",
+"itemindex":"",
+"useProject":true,
+"useGallery":true,
+"items":{
+	"galleries":[
+		{"type": "image", "tn":"./assets/devday/10/tn1.png", "url":"./assets/devday/10/all.jpg","title":"단체사진"},
+		{"type": "image", "tn":"./assets/devday/10/tn2.png", "url":"./assets/devday/10/api.jpg","title":"api 사용하기"},
+		{"type": "image", "tn":"./assets/devday/10/tn3.png", "url":"./assets/devday/10/intro1.jpg","title":"소개"},
+		{"type": "image", "tn":"./assets/devday/10/tn4.png", "url":"./assets/devday/10/lunch.jpg","title":"점심도시락"},
+		{"type": "image", "tn":"./assets/devday/10/tn5.png", "url":"./assets/devday/10/prize.jpg","title":"아이패드 상"},
+		{"type": "image", "tn":"./assets/devday/10/tn6.png", "url":"./assets/devday/10/project1.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/10/tn7.png", "url":"./assets/devday/10/project2.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/10/tn8.png", "url":"./assets/devday/10/project3.jpg","title":"프로젝트"}
+    ],
+    "projects":[
+    	{"team":"전무익","name":"ShopTime - 실시간 쇼핑 함께하기","msg1":"쇼핑타임(ShopTime)은 친구들과 실시간으로 인터넷 쇼핑을 함께 즐길 수 있는 웹서비스입니다.","prize":"1등","url":"","icon":""},
+		{"team":"봄싹JS 팀","name":"백문불여일견 - M32 ","msg1":"다음 로드뷰 API를 이용해서 모임장소나 약속장소 등등.. 처음 찾아오는 사람들을 위해서 약도를 그려준다던가 지도위치를 알려줘서 지도를 보고 찾아오게 한다던가 아니면 도착장소에서 가장 가까운 장소에 와서 전화를 통해서 오는 길을 알려준다던가 하는 불편함을 최소한 덜어 줍니다.","prize":"2등","url":"","icon":""},
+		{"team":"mazingga2","name":"Tiltoramio","msg1":"지도, 로드뷰와 함께 각 지역의 업로드 되어져 있는 사진들을 검색합니다. 예를 들면, 올림픽 공원의 모습을 로드뷰로 찾아가면, 그 곳에서 설정간 반경 안 지역에 매칭된 사진들을 검색합니다.로드뷰로 올림픽 공원을 보면, 로드뷰를 촬영한 시점과 제한된 영역의 장소를 볼 수 있습니다.하지만 사용자는 Tiltoramio에서의 사진들을 보고, 올림픽 공원의 환경과 특징등을 더 잘 느낄 수 있습니다.","prize":"3등","url":"","icon":"project3.png"},
+		{"team":"김동우","name":"Where you've been ","msg1":"WYB는 사용자의 트윗을 위치 정보에 따라 정렬해서 보여주어 사용자의 활동 지역 등을 한 눈에 볼 수 있도록 하는 서비스입니다. 스마트폰을 이용해 트윗을 하면 위치 정보를 함께 전송할 수 있지만 트위터는 트윗된 시간에 따라 보여주고 있습니다. 반면 WYB는 저장된 장소 정보를 이용해 지도상에 트윗을 표시해 주어서 사용자의 이동 경로 등을 한 눈에 살펴 볼 수 있고, 이동한 지점의 로드뷰와 항공사진 등을 쉽게 살펴볼 수 있도록 하여 사용자가 쉽게 해당 장소를 기억해낼 수 있도록 돕습니다.","prize":"","url":"","icon":""}
+    ],
+    "social":[
+    	{"type":"blog","title":"다음 Devday를 다녀와서...","url":"http://iblog.saeparan.com/entry/Devday2010Review","name":"바람의화원","date":"2010-07-02"},
+    	{"type":"blog","title":"제10회 Daum DevDay 참가","url":"http://holls2000.tistory.com/entry/%EC%A0%9C10%ED%9A%8C-Daum-DevDay-%EC%B0%B8%EA%B0%80","name":"루지메이앙","date":"2010-08-20"},
+		{"type":"picture","title":"Daum DevDay 10th","url":"http://www.flickr.com/photos/daumdna/sets/72157624243394033/","name":"플리커","date":"2010-06-26"}
+    ]
+}};
+</script>
+</body>
+</html>

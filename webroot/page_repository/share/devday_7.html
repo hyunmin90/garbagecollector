@@ -1,0 +1,150 @@
+<html>
+<head>
+	<html lang="ko">
+	<title>Daum DNA 개발자 네트워크 : Daum DNA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel="stylesheet" type="text/css" href="./assets/dna_common.css">	
+	<link rel="stylesheet" type="text/css" href="./assets/dna_share.css">	
+	<script src="http://s1.daumcdn.net/svc/original/U0301/cssjs/jquery/jquery-1.7.2.min.js"></script>
+	<script src="./assets/devday/devday.js"></script>
+</head>
+<body>
+<div class="wrap_list">
+	<ul class="list_evt">
+		<li class="on" >
+			<div class="wrap_fold">
+				<div class="wrap_tab tab_type1">
+					<ul id="d_tabmenu" class="tab_comm tab_evt">
+						<li class="on intro">
+							<a href="#" onclick="javascript:selectIntro();return false;" class="link menu1">소개</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cont_tab cont_on">
+					<div class="cont_intro" >
+						<strong class="screen_out">소개</strong>
+						<div class="thumb"><img src="" class="thumb_img" width="257" height="179" alt=""></div>
+						<div class="cont">
+							<strong class="tit"></strong>
+							<div class="txt"></div>
+						</div>
+					</div>
+					<div class="cont_project" style="display: none;">
+						<strong class="screen_out">프로젝트</strong>
+						<ul class="list"></ul>
+					</div>
+					<div class="cont_gallery" style="display: none;">
+						<strong class="screen_out">갤러리</strong>
+						<div class="viewer">
+						</div>
+						<div class="box_gallery">
+							<strong class="screen_out">목록</strong>
+							<div class="box_slide">
+								<ul class="list_video" style="left:-0px;width:3000px;">
+								</ul>
+							</div>
+							
+							<a href="#" class="btn_share btn_prev" onclick="javascript:galleryPrev();return false;">이전</a>
+							<a href="#" class="btn_share btn_next" onclick="javascript:galleryNext();return false;">다음</a>
+							
+						</div>
+					</div>
+					<div class="cont_respond" style="display: none;">
+						<strong class="screen_out">반응모음</strong>
+							<!--
+							<div class="respond fst">
+								<strong class="tit_share tit_photo">사진모음</strong>
+								<ul class="list">
+									<li>
+										<a href="#" class="link">플리커 사진</a>
+									</li>
+									<li>
+										<a href="#" class="link">다음 클라우드</a>
+									</li>
+								</ul>
+							</div>
+							 -->
+							<div class="respond">
+								<strong >관련 글 모음</strong>
+								<!-- <strong class="tit_share tit_relation">관련 글 모음</strong> -->
+								<ul class="list" id="d_bloglist">
+								</ul>
+							</div>
+							<!-- 
+							<div class="respond">
+								<strong class="tit_share tit_short">관련 짧은 글 모음</strong>
+								<ul class="list list_short">
+									<li>
+										<span class="ico_share ico_twitter">트위터</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">후크선장</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_facebook">페이스북</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_yozm">요즘</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_me2day">미투데이</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+								</ul>
+							</div>
+							 -->
+						</div>
+				</div>
+			</div>
+			<a target="_parent" class="btn_fold btn_open" href="/pages/share/devday">목록으로</a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+var data = {"name":"devday-7회",
+"id":7,
+"title":"제7회 Daum DevDay",
+"msg1":"기다리고 기다리던 7번째 Daum DevDay가 다음과 같이 열립니다!",
+"msg2":"튜토리얼 세션",
+"msg3":"YouFree Developer를 이용한 YouFree Basic 서비스 개발",
+"desc":"기다리고 기다리던 7번째 Daum DevDay가 다음과 같이 열립니다! 이번 행사에서는 다음과 같은 튜토리얼 세션이 있을 예정입니다. YouFree Developer를 이용한 YouFree Basic 서비스 개발 (특별상을 수상할 예정이오니 미리 사용해 보시길 권장합니다.)",
+"image1":"sinwonchul.jpg",
+"place":"Daum UCC오피스(홍익대학교 홍문관 14층)",
+"date":"2009-05-30 (1일)",
+"itemindex":"",
+"useProject":true,
+"useGallery":true,
+"items":{
+	"galleries":[
+		{"type": "image", "tn":"./assets/devday/7/tn1.png", "url":"./assets/devday/7/intro1.jpg","title":"설명회"},
+		{"type": "image", "tn":"./assets/devday/7/tn2.png", "url":"./assets/devday/7/intro2.jpg","title":"설명회"},
+		{"type": "image", "tn":"./assets/devday/7/tn3.png", "url":"./assets/devday/7/lunch1.jpg","title":"점심식사"},
+		{"type": "image", "tn":"./assets/devday/7/tn4.png", "url":"./assets/devday/7/prize.jpg","title":"상주는사진"},
+		{"type": "image", "tn":"./assets/devday/7/tn5.png", "url":"./assets/devday/7/project1.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/7/tn6.png", "url":"./assets/devday/7/project2.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/7/tn7.png", "url":"./assets/devday/7/project3.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/7/tn8.png", "url":"./assets/devday/7/project4.jpg","title":"프로젝트"}
+    ],
+    "projects":[
+		{"team":"강기현","name":"","msg1":"","prize":"대상","url":"","icon":""},
+		{"team":"류성태","name":"","msg1":"","prize":"우수상","url":"","icon":""},
+		{"team":"성대현,조현석,고종길","name":"","msg1":"","prize":"우수상","url":"","icon":""},
+		{"team":"박영식","name":"","msg1":"","prize":"YouFree상","url":"","icon":""}
+    ],
+    "social":[
+		{"type":"blog","title":"제7회 Daum DevDay 성료!","url":"http://tadoli.tistory.com/170","name":"Tadoli","date":"2009-06-01"},
+    	{"type":"picture","title":"제 7회 다음 데브데이 플리커 사진","url":"http://www.flickr.com/photos/studioego/sets/72157618917903737/detail/","name":"StudioEgo","date":"2009-05-30"}
+    ]
+}};
+</script>
+</body>
+</html>

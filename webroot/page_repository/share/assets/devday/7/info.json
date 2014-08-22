@@ -1,0 +1,35 @@
+{"name":"devday-7회",
+"id":7,
+"title":"제7회 Daum DevDay",
+"msg1":"기다리고 기다리던 7번째 Daum DevDay가 다음과 같이 열립니다!",
+"msg2":"튜토리얼 세션",
+"msg3":"YouFree Developer를 이용한 YouFree Basic 서비스 개발",
+"desc":"기다리고 기다리던 7번째 Daum DevDay가 다음과 같이 열립니다! 이번 행사에서는 다음과 같은 튜토리얼 세션이 있을 예정입니다. YouFree Developer를 이용한 YouFree Basic 서비스 개발 (특별상을 수상할 예정이오니 미리 사용해 보시길 권장합니다.)",
+"image1":"sinwonchul.jpg",
+"place":"Daum UCC오피스(홍익대학교 홍문관 14층)",
+"date":"2009-05-30 (1일)",
+"itemindex":"",
+"useProject":true,
+"useGallery":true,
+"items":{
+	"galleries":[
+		{"type": "image", "tn":"./assets/devday/7/tn1.png", "url":"./assets/devday/7/intro1.jpg","title":"설명회"},
+		{"type": "image", "tn":"./assets/devday/7/tn2.png", "url":"./assets/devday/7/intro2.jpg","title":"설명회"},
+		{"type": "image", "tn":"./assets/devday/7/tn3.png", "url":"./assets/devday/7/lunch1.jpg","title":"점심식사"},
+		{"type": "image", "tn":"./assets/devday/7/tn4.png", "url":"./assets/devday/7/prize.jpg","title":"상주는사진"},
+		{"type": "image", "tn":"./assets/devday/7/tn5.png", "url":"./assets/devday/7/project1.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/7/tn6.png", "url":"./assets/devday/7/project2.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/7/tn7.png", "url":"./assets/devday/7/project3.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/7/tn8.png", "url":"./assets/devday/7/project4.jpg","title":"프로젝트"}
+    ],
+    "projects":[
+		{"team":"강기현","name":"","msg1":"","prize":"대상","url":"","icon":""},
+		{"team":"류성태","name":"","msg1":"","prize":"우수상","url":"","icon":""},
+		{"team":"성대현,조현석,고종길","name":"","msg1":"","prize":"우수상","url":"","icon":""},
+		{"team":"박영식","name":"","msg1":"","prize":"YouFree상","url":"","icon":""}
+    ],
+    "social":[
+		{"type":"blog","title":"제7회 Daum DevDay 성료!","url":"http://tadoli.tistory.com/170","name":"Tadoli","date":"2009-06-01"},
+    	{"type":"picture","title":"제 7회 다음 데브데이 플리커 사진","url":"http://www.flickr.com/photos/studioego/sets/72157618917903737/detail/","name":"StudioEgo","date":"2009-05-30"}
+    ]
+}}

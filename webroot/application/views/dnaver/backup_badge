@@ -1,0 +1,106 @@
+function grant_badge()
+	{
+		$badgelist = $this->get_badgelist()->result();
+		$getbadgedate = date("Y-m-d H:i:s");
+
+		foreach($badgelist as $b)
+		{	
+			$Query = "INSERT INTO member_badgegrant(badge,getbadgedate,userid)";
+			$Query .= " SELECT '".$b->id."', '".$getbadgedate."', userid FROM";
+			switch ($b->getprocess) {
+				
+				//TODO
+				//DNA 카페에 가압된 사람에게 수여한다. 배지코드 - cj1
+				case 'cj1':
+					$Query .= " (
+									SELECT userid
+									FROM member_user 
+					             	WHERE cafejoin = 1
+					            ) as t WHERE 1=1";
+					break;
+
+				//TODO
+				//API를 기준 이상 발급 받은 사람에게 수여한다 .배지코드 - a1, a3, a5
+				case (preg_match('/^a/', $b->getprocess) ? true : false) :
+					$Query .= "(
+									select userid,count(*) as count from api_key  group by userid order by count desc
+								) as t WHERE t.count >= ".str_replace('a','',$b->getprocess);
+					break;			
+
+
+				//TODO
+				//질문 게시판에 글을 50번 이상 게시한 사람에게 수여한다. 배지코드 - qna50
+				case (preg_match('/^qna/', $b->getprocess) ? true : false) :
+					$Query .= "(
+									SELECT
+									distinct(member_user.userid),
+									(SELECT COUNT(*) FROM member_cafeactivity WHERE member_cafeactivity.userid = member_user.userid AND boardid = 'KErw') AS cnt 
+									FROM member_user
+									JOIN `member_cafeactivity` ON member_user.userid = member_cafeactivity.userid
+									
+								) as t WHERE t.cnt >= ".str_replace('qna','',$b->getprocess);
+					break;
+
+
+				//TODO
+				//게시판을 통틀어 총 글을 기준 이상 작성한 사람에게 수여한다. 배지코드 - bw5, bw30
+				case (preg_match('/^bw/', $b->getprocess) ? true : false) :
+					$Query .= "(
+									SELECT
+									distinct(member_user.userid),
+									(SELECT COUNT(*) FROM member_cafeactivity WHERE member_cafeactivity.userid = member_user.userid AND type = 'board') AS cnt 
+									FROM member_user
+									JOIN `member_cafeactivity` ON member_user.userid = member_cafeactivity.userid
+									
+								) as t WHERE t.cnt >= ".str_replace('bw','',$b->getprocess);
+					break;
+
+				//TODO
+				//카페를 기준 이상 방문한 사람에게 수여한다. (한줄 메모장에 남긴 글의 갯수로 확인) 배지코드 - vc3, vc30, vc50
+				case (preg_match('/^vc/', $b->getprocess) ? true : false) :
+					$Query .= "(
+									SELECT
+									distinct(member_user.userid),
+									(SELECT COUNT(*) FROM member_cafeactivity WHERE member_cafeactivity.userid = member_user.userid AND boardid = '_memo') AS cnt 
+									FROM member_user
+									JOIN `member_cafeactivity` ON member_user.userid = member_cafeactivity.userid
+
+								) as t WHERE t.cnt >= ".str_replace('vc','',$b->getprocess);
+					break;
+				
+				//TODO
+				//이벤트에 참가하여서 수상 경렬 횟수로 배지를 부여한다. 배지코드 - ew1
+				case (preg_match('/^ew/', $b->getprocess) ? true : false) :
+					$Query .= "(
+									SELECT
+									distinct(member_user.userid),
+									(SELECT COUNT(*) FROM member_event_join WHERE member_event_join.userid = member_user.userid AND prize IS NOT NULL) AS cnt 
+									FROM member_user
+									JOIN `member_event_join` ON member_user.userid = member_event_join.userid
+
+								) as t WHERE t.cnt >= ".str_replace('ew','',$b->getprocess);
+					break;
+
+				//TODO
+				//이벤트에 참가한 횟수로 배지를 부여한다. 배지코드 - ep3, ep5
+				case (preg_match('/^ep/', $b->getprocess) ? true : false) :
+					$Query .= "(
+									SELECT
+									distinct(member_user.userid),
+									(SELECT COUNT(*) FROM member_event_join WHERE member_event_join.userid = member_user.userid) AS cnt 
+									FROM member_user
+									JOIN `member_event_join` ON member_user.userid = member_event_join.userid
+
+								) as t WHERE t.cnt >= ".str_replace('ep','',$b->getprocess);
+					break;
+
+				default:
+					# code...
+					break;
+			}
+			$Query .= " AND userid NOT IN (select userid from member_badgegrant where badge="."'".$b->id."'".")";
+			$this->openapi_db->query($Query);
+
+
+		}
+	}

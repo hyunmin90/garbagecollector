@@ -1,0 +1,162 @@
+<html>
+<head>
+	<html lang="ko">
+	<title>Daum DNA 개발자 네트워크 : Daum DNA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel="stylesheet" type="text/css" href="./assets/devday/dna_common.css">
+	<link rel="stylesheet" type="text/css" href="./assets/devday/dna_share.css">
+	<script src="http://s1.daumcdn.net/svc/original/U0301/cssjs/jquery/jquery-1.7.2.min.js"></script>
+	<script src="./assets/devday/devday.js"></script>
+</head>
+<body>
+<div class="wrap_list">
+	<ul class="list_evt">
+		<li class="on" >
+			<div class="wrap_fold">
+				<div class="wrap_tab tab_type1">
+					<ul id="d_tabmenu" class="tab_comm tab_evt">
+						<li class="on intro">
+							<a href="#" onclick="javascript:selectIntro();return false;" class="link menu1">소개</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cont_tab cont_on">
+					<div class="cont_intro" >
+						<strong class="screen_out">소개</strong>
+						<div class="thumb"><img src="" class="thumb_img" width="257" height="179" alt=""></div>
+						<div class="cont">
+							<strong class="tit"></strong>
+							<div class="txt"></div>
+						</div>
+					</div>
+					<div class="cont_project" style="display: none;">
+						<strong class="screen_out">프로젝트</strong>
+						<ul class="list"></ul>
+					</div>
+					<div class="cont_gallery" style="display: none;">
+						<strong class="screen_out">갤러리</strong>
+						<div class="viewer">
+						</div>
+						<div class="box_gallery">
+							<strong class="screen_out">목록</strong>
+							<div class="box_slide">
+								<ul class="list_video" style="left:-0px;width:3000px;">
+								</ul>
+							</div>
+							
+							<a href="#" class="btn_share btn_prev" onclick="javascript:galleryPrev();return false;">이전</a>
+							<a href="#" class="btn_share btn_next" onclick="javascript:galleryNext();return false;">다음</a>
+							
+						</div>
+					</div>
+					<div class="cont_respond" style="display: none;">
+						<strong class="screen_out">반응모음</strong>
+							<!--
+							<div class="respond fst">
+								<strong class="tit_share tit_photo">사진모음</strong>
+								<ul class="list">
+									<li>
+										<a href="#" class="link">플리커 사진</a>
+									</li>
+									<li>
+										<a href="#" class="link">다음 클라우드</a>
+									</li>
+								</ul>
+							</div>
+							 -->
+							<div class="respond">
+								<strong >관련 글 모음</strong>
+								<!-- <strong class="tit_share tit_relation">관련 글 모음</strong> -->
+								<ul class="list" id="d_bloglist">
+								</ul>
+							</div>
+							<!-- 
+							<div class="respond">
+								<strong class="tit_share tit_short">관련 짧은 글 모음</strong>
+								<ul class="list list_short">
+									<li>
+										<span class="ico_share ico_twitter">트위터</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">후크선장</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_facebook">페이스북</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_yozm">요즘</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_me2day">미투데이</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+								</ul>
+							</div>
+							 -->
+						</div>
+				</div>
+			</div>
+			<a target="_parent" class="btn_fold btn_open" href="/pages/share/devday">목록으로</a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+var data = {"name":"devnight-1회",
+"id":1,
+"title":"Daum DevNight 2007",
+"msg1":"Daum DevNight 2007 에 여러분을 초대합니다!",
+"msg2":"밤샘 코딩!!",
+"msg3":"하룻밤 동안 오픈 API에 대한 대화와 친목 그리고 아이디어를 구현해 보는 실험적인 행사",
+"desc":"Daum DevNight 2007 에 여러분을 초대합니다! Daum 개발자 네트워크에서는 외부 개발자 및 사용자가 Daum의 오픈 API를 이용하여 다양한 부가 서비스를 얻을 수 있도록 돕고 있습니다. Daum 오픈 API는 대학생 및 창업 희망자에게는 창의적인 서비스를 만들 수 있는 기반을 제공해 드리고, 기존 서비스 개발자에게는 더 많은 부가 서비스를 제공할 수 있습니다. 본 행사는 Daum 오픈 API를 이용하는 외부 개발자를 초청해 하룻밤 동안 오픈 API에 대한 대화와 친목 그리고 아이디어를 구현해 보는 실험적인 행사입니다. 해외에서는 야후! 개발자 네트워크에서 Open Hack Day라는 행사를 진행한 바 있습니다.",
+"image1":"project.jpg",
+"place":"서초구 양재동 다음커뮤니케이션 본사 3층",
+"date":"2007-06-01 (1박 2일)",
+"itemindex":"",
+"useProject":true,
+"useGallery":true,
+"items":{
+	"galleries":[
+		{"type": "image", "tn":"./assets/devday/1/tn1.png", "url":"./assets/devday/1/idea.png", "title":"회의중인 모습"},
+		{"type": "image", "tn":"./assets/devday/1/tn2.png", "url":"./assets/devday/1/introduce.png","title":"초대 - 행사순서에 관한 예시"},
+		{"type": "image", "tn":"./assets/devday/1/tn3.png", "url":"./assets/devday/1/lucky.png","title":"추첨하는 사진"},
+		{"type": "image", "tn":"./assets/devday/1/tn4.png", "url":"./assets/devday/1/lunch.png","title":"점심식사중인 모습"},
+		{"type": "image", "tn":"./assets/devday/1/tn5.png", "url":"./assets/devday/1/project.jpg","title":"코딩하는 모습"}
+    ],
+    "projects":[
+    	{"team":"강대권,정상일","name":"도서 스크랩 및 리뷰 매쉬업 윈도우 사이드바 가젯","msg1":"사용자는 BGadget을 이용해서 책을 검색하고(Daum Booksearch) 그 중 맘에 드는 책정보를 자신의 계정(Springnote)에 담는다.차후 그 책에 대한 리뷰 작성(Springnote)이 가능하다.","prize":"","url":"","icon":""},
+		{"team":"허광남,최현석,최혜영,허걸","name":"검색 API를 이용한 게시판 검색 확장","msg1":"한정된 자원의 게시판에 다음 카페, 게시판 등의 검색 결과를 open API를 이용하여 확장시킨다.","prize":""},
+		{"team":"김기출,문경두","name":"뉴스, 블로그, 카페 검색 API를 이용한 특화(관심) 기사 수집기","msg1":"내가 관심을 가지고 있는 키워드를 별다른 설정(검색)없이 최근에 어떤 사건이 일어났으며 어떤 커뮤니케이션이 되고 있는지를 한눈에 알 수 있다.","prize":"","url":"","icon":""},
+		{"team":"정재성,이창훈","name":"K리그 태터툴즈 플러그인 개발 및 Mashup site 개발","msg1":"K리그 OpenAPI를 Daum Open API를 이용해 만들어, 이를 토대로 K리그 관련 정보(순위, 일정표, 뉴스 등)를 제공해주는 태터툴즈 사이드바를 개발한다.","prize":"3등","url":"","icon":""},
+		{"team":"김성구,정문기","name":"태그의 연관관계를 이용한 Mix on Game","msg1":"사용자가 입력한 단어의 연관 태그들을 수집하고(Flickr OpenAPI), 수집된 단어들을 사진(Flickr OpenAPI), 동영상(youtube OpenAPI, 블로그(Daum OpenAPI), 뉴스(Daum OpenAPI)등의 자료를 보며 맞추는 게임입니다.","prize":"","url":"","icon":""},
+		{"team":"김상용,강현식","name":"검색 API를 이용한 일본어 사전","msg1":"Visual C++을 이용 일본어 사전을 만들어본다.","prize":"","url":"","icon":""},
+		{"team":"방용환,오정석","name":"블로그 방문자 태깅 및 검색 플러그인","msg1":"1인칭 블로그간의 인적 네트워크 개념을 도입한 방문자 태깅 기능을 구현함으로써 방문객의 성향을 직관적으로 파악할 수 있게 함과 동시에 관련된 정보검색을 효율적으로 가능하게 함.","prize":"","url":"","icon":""},
+		{"team":"유택상,신현우,전용우","name":"mp3플레이어를 위한 블로그 검색 플러그인","msg1":"Winamp에 IE를 임베드하여, 현재 듣고 있는 노래 정보를 블로그에서 찾는 플러그인.","prize":"2등","url":"","icon":""},
+		{"team":"변용훈,임대찬,백승용,배유진","name":"d&TatterShop ver 0.25 beta (디엔샵 쇼핑몰 테터툴즈 플러그인)","msg1":"Open API를 이용하여 태그 기반으로 디엔샵에서 쇼핑을 할수있는 테터툴즈 플러그인을 제작한다.","prize":"","url":"","icon":""},
+		{"team":"이정주,박준성,남기수,박만수","name":"지름신 알리미","msg1":"자신이 정한 상품을 가계부의 잔액을 통해 얼마나 남았는지 알려주는 서비스이다.","prize":"1등","url":"","icon":""},
+		{"team":"김용식,전형표,신민식","name":"검색과 글쓰기를 결합한 개인 정보 관리 ","msg1":"글을 쓰면서 관련된 정보를 검색하여 자동으로 링크가 걸리도록 하여 보다 더 좋은 정보를 만들 수 있도록 한다.","prize":"","url":"","icon":""},
+		{"team":"용영환,이바로슬,배민경,김광섭,박정근","name":"Daum Toolbar for Firefox","msg1":"Firefox 사용자를 위한 Daum 툴바 확장. ","prize":"","url":"","icon":""},
+		{"team":"김주홍,이호규","name":"D&Shop의 디카 전문리뷰 제공 서비스","msg1":"\"디카는 D&Shop에서 전문리뷰와 함께\" 라는 슬로건과 함께 디엔샵 검색 api을 이용한 디카 검색 및 해당 상품의 전문 리뷰를 제공한다.","prize":"","url":"","icon":""},
+		{"team":"이광운","name":"OpenApi로 메타검색 서비스 만들기 ","msg1":"OpenAPI를 이용해 여러사이트 정보를 한 곳에서 조회할 수 있도록 하는 프로토타입 서비스","prize":"","url":"","icon":""},
+		{"team":"최승길,이비오,박신구","name":"Apollo 를 이용한 mini 다음","msg1":"Apollo와 Daum API를 이용한 데스크탑용 프로그램으로 openAPI 이외에 HTML 에서 정보를 얻어 Daum의 메인 페이지의 컨텐츠를 재편집해서 서비스하고자 했던것이 목표입니다.","prize":"","url":"","icon":""}
+	],
+    "social":[
+		{"type":"blog","title":"Daum DevNight 2007 현장의 모습들","url":"http://river.ecplaza.net/river/151","name":"리버 블로그","date":"2007-06-02"},
+		{"type":"blog","title":"Daum Dev Night","url":"http://blog.naver.com/gachoori/140038471936","name":"Joshua. kim’s Bloooooog","date":"2007-06-02"},
+		{"type":"blog","title":"Daum Dev Night에서 TT Plugin 개발 <K리그 뉴스>","url":"http://battery.to/entry/Daum-Dev-Night%EC%97%90%EC%84%9C-TT-Plugin-%EA%B0%9C%EB%B0%9C1-K%EB%A6%AC%EA%B7%B8-%EB%89%B4%EC%8A%A4","name":"배터리의 충전기","date":"2007-06-02"},
+		{"type":"blog","title":"Daum Dev Night +_+","url":"http://neonite.tistory.com/5","name":"☜밤매™☞","date":"2007-06-05"},
+		{"type":"blog","title":"Daum, 데브나잇(DevNight) 참가 후기","url":"http://newkain.egloos.com/282941","name":"떵꺼리 & 수샤","date":"2007-06-06"},
+		{"type":"blog","title":"데브나잇(DevNight), 열정의 밤","url":"http://www.likejazz.com/archives/196","name":"likejazz","date":"2007-06-08"}
+    ]
+}};
+</script>
+</body>
+</html>

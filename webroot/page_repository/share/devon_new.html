@@ -1,0 +1,266 @@
+<html>
+<head>
+	<html lang="ko">
+	<title>Daum DNA 개발자 네트워크 : Daum DNA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel="stylesheet" type="text/css" href="./assets/dna_common.css">
+	<link rel="stylesheet" type="text/css" href="./assets/dna_share.css">
+	<script src="http://s1.daumcdn.net/svc/original/U0301/cssjs/jquery/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<div class="wrap_info">
+	<ul class="list_thumb">
+		<li>
+			<img src="./devon/rmain1.jpg" class="thumb_img" width="218" height="124" alt="">
+		</li>
+		<li>
+			<img src="./devon/rmain2.jpg" class="thumb_img" width="218" height="124" alt="">
+		</li>
+		<li>
+			<img src="./devon/rmain3.jpg" class="thumb_img" width="218" height="124" alt="">
+		</li>
+	</ul>
+	<div class="txt">
+		DevOn은 국내 대표 기술자 커뮤니티가 참여하여 Daum과 함께 만들어 가는 열린 콘퍼런스를 지향하고 있습니다.<br>
+		본 행사는 개발자간의 정보 공유 및 소통을 주제로 한 주제 강연 및 대담 그리고 각 기술 공유 세션 및 전시 및 참여로 이루어집니다.<br>
+		또한, 국내의 대표 사용자 참여형 프로그램을 공동 행사 형식으로 개최합니다.
+	</div>
+</div>
+<div class="wrap_list">
+	<ul id="devday_list" class="list_evt"></ul>
+</div>
+<script type="text/javascript">
+var datas;
+var images;
+var selectedGalleries;
+
+	$(document).ready(function() {
+		images = new Array();
+		datas = new Array();
+		selectedGalleries = new Array(); 
+		$.getJSON("./devon/list.json",
+		        function(data){
+	        		var lastid = 0;
+		          for(var index in data.items)
+		          {
+		        	  if(data.items[index].id > lastid) lastid = data.items[index].id;
+		        	  var html = '<li id="item'+data.items[index].id+'"><div class="list_thumb"><div class="thumb"><img src="" class="thumb_img" width="148" height="103" alt=""></div><div class="cont"><strong class="tit"></strong><span class="place"></span><div class="time"></div><ul class="list_info"><li></li></ul></div><div class="wrap_fold" ><div class="wrap_tab tab_type1"><ul class="tab_comm tab_evt">';
+		        	  //html += '<li class="intro on"><a href="#" onclick="javascript:selectIntro('+ data.items[index].id +');return false;" class="link menu1">소개</a></li>';
+		        	  //if(data.items[index].useProject == true) html += '<li class="project"><a href="#" onclick="javascript:selectProject('+ data.items[index].id +');return false;" class="link menu2">프로젝트</a></li>';
+		        	  //if(data.items[index].useGallery == true) html += '<li class="gallery"><a href="#" onclick="javascript:selectGallery('+ data.items[index].id +');return false;" class="link menu3">갤러리</a></li>';
+		        	  //html += '<li class="social"><a href="#" onclick="javascript:selectSocial('+ index +');return false;" class="link menu4">반응모음</a></li>';
+		        	  //html += '</ul></div><div class="cont_tab cont_on" /></div><button type="button" class="btn_fold" >펼치기</button></div></li>';
+		        	  html += '</ul></div><div class="cont_tab cont_on" /></div></li>';
+		        	  
+		        	  //<a class="btn_fold" href="/share/devon/'+data.items[index].id+'">[자세히 보기]</a></li>';
+		        	  
+		        	  var $tag = $(html);
+		        	  $tag.find(" .wrap_fold").show();
+		        	  if(data.items[index].image1 != "")
+			        	  $tag.find('img').attr('src','./devon/'+ data.items[index].id +'/'+ data.items[index].image1);
+		        	  else
+		        		  $tag.find('img').remove();
+		        	  $tag.find('button').attr('onclick','javascript:expand('+data.items[index].id+');return false;');
+		        	  
+		      		  $tag.find('.tit').append(data.items[index].title);
+		      		  $tag.find('.time').append(data.items[index].date);
+		      		  $tag.find('.place').append(data.items[index].place);
+		      		  $tag.find('ul.list_info').append('<li>'+data.items[index].msg1+'</li>');
+		      		  $tag.find('ul.list_info').append('<li>'+data.items[index].msg2+'</li>');
+		      		  $tag.find('ul.list_info').append('<li>'+data.items[index].msg3+'</li>');
+		      		  $tag.find('ul.list_info').append('<li><a href="'+data.items[index].msg4_href+'" target="_blank">'+data.items[index].msg4+'</a></li>');
+
+		      		  
+		      		  var $introTag = $('<div class="cont_project"><strong class="screen_out">프로젝트</strong><ul class="list"></ul></div>');
+		      		  
+		      		  initGallery(data.items[index].id);
+		    		  
+		    		  $introTag.appendTo($tag.find('.cont_tab'));
+		    		  
+		    		 
+
+					
+
+		        	  $tag.appendTo('#devday_list');
+		          } 
+		          //expand(lastid);
+		        });	  
+	});
+	
+	
+	function selectGalleryItem(dIndex,gIndex)
+	{
+		var eleId = "#item"+dIndex;
+		
+		$(eleId + ' .list_video>li.on').removeClass('on');
+		selectedGalleries[dIndex] = gIndex;
+		$(eleId + ' .list_video>li').eq(gIndex).addClass('on');
+
+		if(datas[dIndex].items.galleries[gIndex].type == 'iframe')
+		{
+			$content = $('<iframe width="100%" height="100%;" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" title="갤러리" class="iframe" />');
+			$content.attr('src',datas[dIndex].items.galleries[gIndex].url);
+			$(eleId + " .viewer").html("");
+			$content.appendTo(eleId + " .viewer");
+		}
+		else if(datas[dIndex].items.galleries[gIndex].type == 'image')
+		{
+			$(eleId + " .viewer").html("");
+			$(images[dIndex][gIndex]).appendTo(eleId + " .viewer");
+		}
+	}
+	
+	function initGallery(index)
+	{
+		selectedGalleries[index] = 0;
+		$.getJSON("./devon/"+index+"/info.json",
+				function(data){
+					datas[index] = data;
+					$tag = $('<div class="cont_gallery"><strong class="screen_out">갤러리</strong><div class="viewer" ></div><div class="box_gallery"><strong class="screen_out">목록</strong><div class="box_slide"><ul class="list_video" style="left:-0px;width:3000px;"></div><a href="#" onclick="javascript:galleryPrev('+index+');return false;" class="btn_share btn_prev">이전</a><a href="#" onclick="javascript:galleryNext('+index+');return false;" class="btn_share btn_next">다음</a></div></div>');
+					images[index] = new Array();
+					for(var i in data.items.galleries)
+					{
+						if(data.items.galleries[i].type == 'image')
+						{
+							//alert(i);
+							images[index][i] = new Image();
+							images[index][i].src = data.items.galleries[i].url;
+							
+							$li = $('<li><a href="#" onclick="javascript:selectGalleryItem('+index+','+i+');return false;" class="thumb"><img src="'+data.items.galleries[i].tn+'" width="70" height="59" class="thumb_img" alt="갤러리"><span class="frame"></span></a></li>');
+						}
+						else if(data.items.galleries[i].type == 'iframe')
+						{
+							$li = $('<li><a href="#" onclick="javascript:selectGalleryItem('+index+','+i+');return false;" class="thumb"><img src="'+data.items.galleries[i].tn+'" width="70" height="59" class="thumb_img" alt="갤러리"><span class="frame"></span><!--<span class="video"></span>--></a></li>');
+						}
+						
+						if(i == 0)
+						{
+							$li.addClass("on");
+							$li.find("a").append($('<span class="frame"></span>'));
+						}
+						$tag.find("ul").append($li);
+					}
+					$tag.appendTo("#item"+index+' .cont_tab');
+					selectGalleryItem(index,0);
+				});
+	}
+	
+	
+	function selectIntro(index)
+	{        
+		var eleId = "#item"+index;
+		if($(eleId + " .intro.on").length == 1) return;
+		$(eleId + " .tab_evt>li").removeClass("on");
+		$(eleId + " li.intro").addClass("on");
+		$(eleId + " .cont_tab>div").hide();
+		$(eleId + " .cont_intro").show();
+	}
+
+	function selectProject(index)
+	{
+		var eleId = "#item"+index;
+		if($(eleId + " .project.on").length == 1) return;
+		$(eleId + " .tab_evt>li").removeClass("on");
+		$(eleId + " li.project").addClass("on");
+		$(eleId + " .cont_tab>div").hide();
+		if($(eleId + " .cont_project").length >= 1) 
+		{
+			$(eleId + " .cont_project").show();
+			return;
+		}
+		initProject(index);
+	}
+
+	function initProject(index)
+	{
+		$.getJSON("./assets/devday/"+index+"/info.json",
+		        function(data){
+	        		var $tag = $('<div class="cont_project"><strong class="screen_out">프로젝트</strong><ul class="list"></ul></div>');
+	        		for(var p_i in data.items.projects)
+	        		{
+	        			var $listTag = $('<li class="fst"><div class="thumb"><img src="" class="thumb_img" width="50" height="50" alt=""></div><div class="cont"><p class="desc">'+data.items.projects[p_i].team+'</p><strong class="tit">'+data.items.projects[p_i].name+'</strong></div></li>');
+	        			$listTag.find('img').attr('src', './assets/devday/'+ (index+1) +'/'+ data.items.projects[p_i].icon);
+	        			if(data.items.projects[p_i].prize != "" && data.items.projects[p_i].prize != undefined)
+	        			{
+	        				$listTag.addClass("prize");
+	        				$listTag.prepend('<strong class="ico_share ico_prize">'+data.items.projects[p_i].prize+'</strong>');
+	        			}
+	        			if(data.items.projects[p_i].url != "" && data.items.projects[p_i].url != undefined)
+	        			{
+	        				$listTag.append('<a href="'+data.items.projects[p_i].url+'" class="btn_comm btn_type1 btn_link"><span class="btn_comm btn_end">바로가기</span></a>');
+	        			}
+	        			$tag.find("ul").append($listTag);
+	        		}
+	        		$tag.appendTo("#item"+index+' .cont_tab');
+		        });
+	}
+
+	function selectGallery(index)
+	{
+		var eleId = "#item"+index;
+		if($(eleId + " .gallery.on").length == 1) return;
+		$(eleId + " .tab_evt>li").removeClass("on");
+		$(eleId + " li.gallery").addClass("on");
+		$(eleId + " .cont_tab>div").hide();
+		if($(eleId + " .cont_gallery").length >= 1) 
+		{
+			selectGalleryItem(index,0);
+			$(eleId + " .cont_gallery").show();
+			return;
+		}
+		initGallery(index);
+	}
+
+	function selectSocial(index)
+	{
+		var eleId = "#item"+index;
+		if($(eleId + " .social.on").length == 1) return;
+		$(eleId + " .cont_tab").html("");
+	}
+
+	function expand(index)
+	{
+		var eleId = "#item"+index;
+		$(eleId + " .wrap_fold").show();
+		selectIntro(index);
+		$(eleId).addClass("on");
+		$(eleId + " .btn_fold").addClass("btn_open");
+		$(eleId + " .btn_fold").removeClass("btn_close");
+		$(eleId + " .btn_fold").text("접기");
+		$(eleId + " .btn_fold").attr("onclick","javascript:collapse("+index+");return false;");
+	}
+
+	function collapse(index)
+	{
+		var eleId = "#item"+index;
+		$(eleId + " .wrap_fold").hide();
+		$(eleId).removeClass("on");
+		$(eleId + " .btn_fold").removeClass("btn_open");
+		$(eleId + " .btn_fold").addClass("btn_close");
+		$(eleId + " .btn_fold").text("펼치기");
+		$(eleId + " .btn_fold").attr("onclick","javascript:expand("+index+");return false;");
+	}
+
+	
+
+		
+	function galleryNext(dIndex)
+	{
+		var gIndex = selectedGalleries[dIndex] + 1;
+		var itemLength = $("#item"+dIndex + ' .list_video>li').size();
+		if(gIndex > 7 || itemLength <= gIndex) selectedGalleries[dIndex] = gIndex = 0;
+		selectGalleryItem(dIndex,gIndex);
+	}
+
+	function galleryPrev(dIndex)
+	{
+		var gIndex = selectedGalleries[dIndex] - 1;
+		var itemLength = $("#item"+dIndex + ' .list_video>li').size();
+		if(gIndex < 0) selectedGalleries[dIndex] = gIndex = itemLength - 1;
+		selectGalleryItem(dIndex,gIndex);
+	}
+	
+</script>
+</body>
+</html>

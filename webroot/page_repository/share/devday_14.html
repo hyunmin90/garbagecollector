@@ -1,0 +1,225 @@
+<html>
+<head>
+	<html lang="ko">
+	<title>Daum DNA 개발자 네트워크 : Daum DNA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel="stylesheet" type="text/css" href="./assets/dna_common.css">	
+	<link rel="stylesheet" type="text/css" href="./assets/dna_share.css">	
+	<script src="http://s1.daumcdn.net/svc/original/U0301/cssjs/jquery/jquery-1.7.2.min.js"></script>
+	<script src="./assets/devday/devday.js"></script>
+</head>
+<body>
+<div class="wrap_list">
+	<ul class="list_evt">
+		<li class="on" >
+			<div class="wrap_fold">
+				<div class="wrap_tab tab_type1">
+					<ul id="d_tabmenu" class="tab_comm tab_evt">
+						<li class="on intro">
+							<a href="#" onclick="javascript:selectIntro();return false;" class="link menu1">소개</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cont_tab cont_on">
+					<div class="cont_intro" >
+						<strong class="screen_out">소개</strong>
+						<div class="thumb"><img src="" class="thumb_img" width="257" height="179" alt=""></div>
+						<div class="cont">
+							<strong class="tit"></strong>
+							<div class="txt"></div>
+						</div>
+					</div>
+					<div class="cont_project" style="display: none;">
+						<strong class="screen_out">프로젝트</strong>
+						<ul class="list"></ul>
+					</div>
+					<div class="cont_gallery" style="display: none;">
+						<strong class="screen_out">갤러리</strong>
+						<div class="viewer">
+						</div>
+						<div class="box_gallery">
+							<strong class="screen_out">목록</strong>
+							<div class="box_slide">
+								<ul class="list_video" style="left:-0px;width:3000px;">
+								</ul>
+							</div>
+							
+							<a href="#" class="btn_share btn_prev" onclick="javascript:galleryPrev();return false;">이전</a>
+							<a href="#" class="btn_share btn_next" onclick="javascript:galleryNext();return false;">다음</a>
+							
+						</div>
+					</div>
+					<div class="cont_respond" style="display: none;">
+						<strong class="screen_out">반응모음</strong>
+							<!--
+							<div class="respond fst">
+								<strong class="tit_share tit_photo">사진모음</strong>
+								<ul class="list">
+									<li>
+										<a href="#" class="link">플리커 사진</a>
+									</li>
+									<li>
+										<a href="#" class="link">다음 클라우드</a>
+									</li>
+								</ul>
+							</div>
+							 -->
+							<div class="respond">
+								<strong >관련 글 모음</strong>
+								<!-- <strong class="tit_share tit_relation">관련 글 모음</strong> -->
+								<ul class="list" id="d_bloglist">
+								</ul>
+							</div>
+							<!-- 
+							<div class="respond">
+								<strong class="tit_share tit_short">관련 짧은 글 모음</strong>
+								<ul class="list list_short">
+									<li>
+										<span class="ico_share ico_twitter">트위터</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">후크선장</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_facebook">페이스북</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_yozm">요즘</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+									<li>
+										<span class="ico_share ico_me2day">미투데이</span>
+										<a href="#" class="link">지금 개발 하고 있어요</a>
+										<span class="txt_bar">|</span><span class="txt_sub ls_1">정주go</span>
+										<span class="txt_bar">|</span><span class="txt_sub">2011.10.21.09:23</span>
+									</li>
+								</ul>
+							</div>
+							 -->
+						</div>
+				</div>
+			</div>
+			<a target="_parent" class="btn_fold btn_open" href="/pages/share/devday">목록으로</a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+var data = {"name":"devday-13회",
+"id":14,
+"title":"제14회 Daum DevDay",
+"msg1":"EVERNOTE, beSuccess, ETRI와 함께 진행",
+"msg2":"특강1 - IT격변기 개발자의 진로는 어디로 향하는가?(김국현)",
+"msg3":"특강2 - 마이피플 봇 API 소개 및 활용 사례",
+"desc":"오픈 API를 이용한 창의적인 아이디어 구현 및 개발자간 교류 확대를 위하여 아래와 같이 열네번째 디브데이를 개최합니다. 이틀간 아이디어 구현에 푹 빠지실 개발자 여러분의 많은 참여를 바랍니다.",
+"image1":"main.jpg",
+"place":"일산 동양인재개발원",
+"date":"2013-05-31 (1박 2일)",
+"itemindex":"",
+"useProject":true,
+"useGallery":true,
+"items":{
+    "galleries":[
+		{"type": "image", "tn":"./assets/devday/14/2.jpg", "url":"./assets/devday/14/2.jpg","title":"api 사용하기"},
+		{"type": "image", "tn":"./assets/devday/14/3.jpg", "url":"./assets/devday/14/3.jpg","title":"소개"},
+		{"type": "image", "tn":"./assets/devday/14/4.jpg", "url":"./assets/devday/14/4.jpg","title":"점심도시락"},
+		{"type": "image", "tn":"./assets/devday/14/5.jpg", "url":"./assets/devday/14/5.jpg","title":"아이패드 상"},
+		{"type": "image", "tn":"./assets/devday/14/6.jpg", "url":"./assets/devday/14/6.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/14/7.jpg", "url":"./assets/devday/14/7.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/14/8.jpg", "url":"./assets/devday/14/8.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/14/9.jpg", "url":"./assets/devday/14/9.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/14/10.jpg", "url":"./assets/devday/14/10.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/14/11.jpg", "url":"./assets/devday/14/11.jpg","title":"프로젝트"}
+    ],
+    "projects":[
+        {
+		"team":"무소속",
+		"name":"xeit.bot",
+		"msg1":"무소속팀은 북마클릿이 낯선 사람들을 위한 마이피플 봇을 만들었는데요, Active X 설치 없이 보안메일을 확인할 수 있는 서비스 Xeit와 마이피플 봇 API를 연동하였습니다.",
+		"prize":"",
+		"about":"http://cafe.daum.net/daumdna/KEpb/240",
+		"url":"http://topicsns.appspot.com",
+		"icon":"",
+		"github":"https://github.com/tomyun/xeit"
+	},
+    	{
+		"team":"서른즈음에",
+		"name":"찌라시봇",
+		"msg1":"놀자봇서른즈음에팀은 불특정 다수에게 검증되지 않은 정보를 날려주는 찌라시봇과 특정 키워드를 중심으로 친구를 찾아주는 놀자봇을 개발하였습니다. 의미있는 정보일 수록 파급력이 커진다는 아이디어를 착안한 찌라시봇과 마이피플 봇이 친구를 찾아주는 중개인 역할을 한다는 아이디어가 참 재미있습니다.",
+		"prize":"",
+		"about":"http://cafe.daum.net/daumdna/KEpb/224",
+		"icon":"",
+		"movie":"http://tvpot.daum.net/v/vf9d9ECJCuYJ2kkU2JJ6mnC",
+		"github":"https://github.com/merovingiaan/devday_14th_myp_bot"
+	},
+    	{
+		"team":"조현석과 서경석",
+		"name":"xookTrend, Issue Collection",
+		"msg1":"조현석과 서경석 팀은 즉석에서 코웍프로그램을 통해 만들어진 코웍팀으로 구글 트랜드페이지 를 모티브로 Daum 소셜픽 API를 이용한 키워드 Visualizing 웹서비스 LookTrend를 만들었습니다. 소셜픽API뿐만 아니라 구글트랜드API를 모두 이용하여 다른나라의 트랜드 또한 볼 수 있습니다.  또한 에버노트 API를 이용해서 최신 이슈를 에버노트에 자동으로 저장하는 Issue Collection을 제작했습니다.",
+		"prize":"",
+		"movie":"http://tvpot.daum.net/v/vf9d9ECJCuYJ2kkU2JJ6mnC",
+		"about":"http://cafe.daum.net/daumdna/KEpb/240",
+		"icon":"",
+		"github":"https://github.com/tomyun/xeit"
+	},
+    	{
+		"team":"u-node & 김봉관",
+		"name":"PageFinder",
+		"msg1":"u-node & 김봉관 팀은 즉석에서 코웍프로그램을 통해 만들어진 코웍팀으로 다음검색 API와 에버노트API를 이용하여 읽은 책에 대해 내용을기록하고 어디까지 읽었는지 표시 할 수있는 웹 서비스인 PageFinder를 제작하였습니다. Daum API를 통해 책에 대한 정보를 가져오고 책의 정보와 데이터는 Evernote에 기록됩니다.",
+		"prize":"",
+		"movie":"hhttp://tvpot.daum.net/v/vdddcSpSGSS9BI8PZSSmmB8",
+		"about":"http://cafe.daum.net/daumdna/KEpb/223",
+		"icon":"",
+		"github":"https://github.com/u-node/pagefinder"
+	},
+    	{
+		"team":"wizluck",
+		"name":"책벌레봇",
+		"msg1":"wizluck 팀은 책 검색 API와 에버노트 API를 이용하여 책을 검색, 추천하고 노트에 저장하는 기능을 제공하는 책벌레봇을 제작하였습니다. 책 정보뿐만아니라 관련 댓글까지 검색 할 수있으며, 소셜픽API를 사용하여 트랜드에 관련된 책을 검색하여 추천하기도 합니다.",
+		"prize":"",
+		"movie":"http://tvpot.daum.net/v/vf3a25ejj50npIjMn5Gup3n",
+		"about":"http://cafe.daum.net/daumdna/KEpb/231",
+		"icon":"",
+		"github":"https://github.com/oddeveloper/hiddenbooks"
+	},
+    	{
+		"team":"플리커스타일",
+		"name":"플리커스타일",
+		"msg1":"플리커 스타일팀은 플리커가 제공하는 1T 무료 저장공간을 어뷰징하여 뮤직 플레이어를 만드는 프로그램을 제작했습니다. MP3 파일을 무손실 PNG 파일로 압축해서 '음반 정보/가사/커버/음원'를 플리커를 이용한 음악플레이어를 만들었습니다. 마이피플 봇 API를 이용한 스마트폰 리모콘 기능도 가능합니다.",
+		"prize":"1",
+		"movie":"http://tvpot.daum.net/v/vf93cbSXUXxUESTxP4bVET4",
+		"about":"http://cafe.daum.net/daumdna/KEpb/233",
+		"icon":"",
+		"github":"https://github.com/barosl/flickr-music-player"
+	},
+    	{
+		"team":"InteliD",
+		"name":"중고딘",
+		"msg1":"InteliD팀은 알라딘 중고서적의 불편한 ui와 기능을 개선한 중고딘이라는 서비스를 개발했습니다. 다음과 에버노트 API를 이용해 새책과의 가격비교와 책 정보를 에버노트에 저장하는 기능을 제공합니다.",
+		"prize":"3",
+		"movie":"http://tvpot.daum.net/v/v5ebdqkNTNnT70nJnWq8n8T",
+		"about":"http://cafe.daum.net/daumdna/KEpb/232",
+		"icon":"",
+		"github":"https://github.com/bjhlvtna/aladin.git"
+	},
+    	{
+		"team":"송창기와 상남자",
+		"name":"NYJP",
+		"msg1":"송창기상남자 팀은 즉석에서 코웍프로그램을 통해 만들어진 코웍팀으로 온라인 슬라이드를 쉽게 만들고 관리하는 인터페이스를 갖춘 NYJP라는 웹 서비스를 제작했습니다. 동일한 url로 접근한 모바일용 페이지는 리모콘 기능도 제공합니다. 슬라이드의 내용을 추출하여 에버노트와 동기화 하는 기능은 제작중이라고 합니다.",
+		"prize":"2",
+		"movie":"http://tvpot.daum.net/v/vd3093fVXRqHRHToT3RVfXU",
+		"about":"http://cafe.daum.net/daumdna/KEpb/238",
+		"icon":"",
+		"github":"https://github.com/ygmaster/nyjp"
+	}
+    ]
+}}
+;
+</script>
+</body>
+</html>

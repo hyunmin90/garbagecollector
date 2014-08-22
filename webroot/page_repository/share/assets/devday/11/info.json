@@ -1,0 +1,30 @@
+{
+"name":"devday-11회",
+"id":11,
+"title":"제11회 Daum DevDay",
+"msg1":"DevOn과 함께 DevDay를 시작합니다!",
+"msg2":"Daum 오픈API의 새로 바뀌는 정책 소개",
+"msg3":"모바일 지도API",
+"desc":"작년 6월 10회 DevDay를 마지막으로 열리지 않았던 DevDay를 다시 시작합니다! 이번 DevDay는 저희가 이번에 처음으로 주최하는 DevOn이라는 행사와 함께 아래와 같이 진행됩니다. 이번 행사에서는 Daum 오픈API의 새로 바뀌는 정책 소개, 업데이트된 지도API, 추후 공개하게 될 모바일 지도API에 대해서 다룰 예정입니다.",
+"image1":"main.jpg",
+"place":"신도림 쉐라톤 서울 호텔 디큐브시티 7F",
+"date":"2011-11-25 (1일)",
+"itemindex":"",
+"useProject":false,
+"useGallery":true,
+"items":{
+	"galleries":[
+		{"type": "image", "tn":"./assets/devday/11/tn1.png", "url":"./assets/devday/11/question1.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn2.png", "url":"./assets/devday/11/question2.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn3.png", "url":"./assets/devday/11/nametag.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn4.png", "url":"./assets/devday/11/ice1.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn5.png", "url":"./assets/devday/11/ice2.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn6.png", "url":"./assets/devday/11/focus.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn7.png", "url":"./assets/devday/11/explain.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"},
+		{"type": "image", "tn":"./assets/devday/11/tn8.png", "url":"./assets/devday/11/devday.jpg", "title":"프로젝트 - 프로젝트 실행 이미지"}
+
+    ],
+    "social":[
+		{"type":"picture","title":"Daum DNA flickr","url":"http://www.flickr.com/photos/daumdna/sets/72157628214886909/","name":"Daum DNA Lab.","date":"2011-11-25"}
+    ]
+}}

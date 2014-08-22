@@ -1,0 +1,45 @@
+{"name":"devday-item",
+"id":8,
+"title":"제8회 Daum DevDay",
+"msg1":"환상의 섬 제주에 여러분을 초대합니다!",
+"msg2":"라이브코딩!!",
+"msg3": "창의적인 아이디어와 개발 열정을 기대!!",
+"desc": "환상의 섬 제주에 여러분을 초대합니다! Daum DevDay는 직접 제안한 프로젝트를 라이브코딩으로 개발하는 행사로 다양한 이벤트와 푸짐한 경품이 함께 합니다. 라이브코딩을 통한 여러분들의 창의적인 아이디어와 개발 열정을 기대해 봅니다!",
+"image1":"peoples.jpg",
+"place":"제주 GMC",
+"date":"2009-08-28 (1박 2일)",
+"itemindex":"",
+"useProject":true,
+"useGallery":true,
+"items":{
+	"galleries":[
+		{"type": "image", "tn":"./assets/devday/8/tn1.png", "url":"./assets/devday/8/dinner1.jpg","title":"저녁식사"},
+		{"type": "image", "tn":"./assets/devday/8/tn2.png", "url":"./assets/devday/8/dinner2.jpg","title":"저녁식사"},
+		{"type": "image", "tn":"./assets/devday/8/tn3.png", "url":"./assets/devday/8/ice.jpg","title":"얼음가지고놀기"},
+		{"type": "image", "tn":"./assets/devday/8/tn4.png", "url":"./assets/devday/8/intro.jpg","title":"설명"},
+		{"type": "image", "tn":"./assets/devday/8/tn5.png", "url":"./assets/devday/8/ping.jpg","title":"탁구"},
+		{"type": "image", "tn":"./assets/devday/8/tn6.png", "url":"./assets/devday/8/project1.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/8/tn7.png", "url":"./assets/devday/8/project2.jpg","title":"프로젝트"},
+		{"type": "image", "tn":"./assets/devday/8/tn8.png", "url":"./assets/devday/8/sea.jpg","title":"바닷가에서놀기"}
+    ],
+    "projects":[
+    	{"team":"infty123","name":"Korea Yard","msg1":"'스코틀랜드 야드'게임을 웹으로 옮긴 것이구요. 경찰이 범인을 잡는 게임입니다.","prize":""},
+		{"team":"kangki","name":"제주도 푸른 밤","msg1":"밤 하늘 공유와 소원을 말하면 음량을 인식해서 밤 하늘에서 별똥별이 떨어지는걸 구현해보려고 했는데,  막상 기본적인 제주도에 대한 태깅과 후기작성 게시판도 완성시키지 못했습니다.","prize":"","url":"http://hyuun.com/devday","icon":"projects2.png"},
+		{"team":"physicist","name":"개인인공위성-저온연소로켓연구소","msg1":"본 프로그램은 아이팟에도 돌아가는 한샘뭇씀(OSMU) 입니다. ","prize":"","url":"http://cosmos.CO2Rocket.com","icon":"projects3.png"},
+		{"team":"queza","name":"YES( Open API for Education)","msg1":"Opne API를 이용한 교육 웹어플리케이션을 만들었습니다.","prize":"","url":"","icon":""},
+		{"team":"godslov","name":"블로거 이슈 따라잡기","msg1":"로거 이슈 따라잡기는, 한RSS의 인기RSS(http://www.hanrss.com/directory/index.qst?show=popular) 1000개를 바탕으로블로거 이슈를 알고리즘에 의해 자동으로 찾아냅니다. 그리고 이 이슈들을 토대로 daum 검색 API들을 이용하여 사용자들이 해당 이슈를 쉽게 접하고 따라잡을 수 있도록 합니다. ","prize":"","url":"","icon":""},
+		{"team":"jeognzu","name":"아이디어 도우미","msg1":"눈을 감고 생각하면 나올까요? 아니면 주위의 무엇에 의해 만들어질까요? 아이디어는 기존에것들의 조합이라고들 합니다. 그럼 기존의 무엇을 어떻게 구비할까요? 구비한다 해도 머리만 복잡해질 것입니다. 그래서 준비한게 방대한 웹의 자료를 마구잡이로 3개를 가져와 보여주는 것이죠. 단지 클릭으로 생각날 엄두가 안나던 기존의 무엇이 나와 조합이 되고 발상의 기회를 마련하게 됩니다.","prize":"우수상","url":"","icon":""},
+		{"team":"cutewebi","name":"Shake-handS","msg1":"요즘 컨퍼런스, 워크샵, 스터디, 세미나 등 각종 오프라인 모임이 개최되고 있습니다. 하지만 행사 및 모임이 각 주최 블로그나 메일로 공지되어 자신이 가고 싶은 모임을 놓치는 경우가 많습니다. 그리고 텍스트 기반이라 직관적으로 스케쥴을 잡기가 어렵습니다. 본 프로젝트는 모든 모임을 장소별, 날짜별, 시간별로 시각적이고 직관적으로 보여주는 메타사이트입니다. ","prize":"","url":"","icon":"projects7.jpg"},
+		{"team":"mulder","name":"3D Realtor by X-File","msg1":"다음 실내보기 서비스를 응용하여 실제로 구입하고자하는 아파트, 오피스텔의 내부를 3D 형태로 미리 볼 수 있는 서비스를 추가하고, 기존에 단편적인 검색 결과에 부가적인 검색 옵션을 추가하여 최적의 매물을 추천해주는 서비스입니다. ","prize":"","url":"","icon":""},
+		{"team":"azki","name":"오픈미궁 (살아있는 퀴즈머신)","msg1":"2~8 명이 한 단어에 대한 여러가지 힌트를 보고, 그 단어를 맞추는 게임입니다. ","prize":"","url":"http://minigame.azki.org/","icon":"projects9.png"},
+		{"team":"ihwan","name":"휴팟","msg1":"'휴팟은 프로젝트를 위한 팀원을 모으고, 팀간 커뮤니케이션을 위한 서비스입니다!' 팀플, 공모전이나, 스터디등을 하고싶을 때 사람찾기 힘드셨죠? 휴팟에서 자기와 관심사가 같는 사람들을 찾고 성공적으로 팀을 만들어보세요! ","prize":"대상","url":"http://www.hupod.net/intro","icon":"projects10.png"}
+
+    ],
+    "social":[
+		{"type":"blog","title":"제8회 Daum DevDay 잘 다녀왔습니다.","url":"http://again4you.tistory.com/47","name":"","date":"2009-09-01"},
+		{"type":"blog","title":"제8회 Daum DevDay 참가자 선정 후기","url":"http://tadoli.tistory.com/180","name":"Tadoli","date":"2009-08-12"},
+		{"type":"blog","title":"Daum DevDay에 가다!!","url":"http://jhs572.tistory.com/1","name":"지한솔","date":"2009-09-03"},
+		{"type":"picture","title":"Daum DNA flickr","url":"http://www.flickr.com/photos/daumdna/sets/72157622216547608/","name":"Daum DNA Lab.","date":"2009-08-28"}
+
+    ]
+}}
